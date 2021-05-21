@@ -1,0 +1,8 @@
+prologue
+    who:	hciuser
+    date:	March 31, 2006 4:10:21 PM CST
+    type:	multiview
+    version:	1.0
+end_prologue
+view {NAME all_threads} {MEMBER {{THREAD {{THREADNAME in} {COORDS {63 50}} {THREADNAME out} {COORDS {191 48}}}}}}
+view {NAME process_helloworld} {MEMBER {{THREAD {{THREADNAME in} {COORDS {63 50}} {THREADNAME out} {COORDS {191 48}}}}}}

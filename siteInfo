@@ -1,0 +1,429 @@
+#
+###############################################################
+#                                                             #
+#                           NOTICE                            #
+#                                                             #
+#   THIS SOFTWARE IS THE PROPERTY OF AND CONTAINS             #
+#   CONFIDENTIAL INFORMATION OF INFOR AND/OR ITS AFFILIATES   #
+#   OR SUBSIDIARIES AND SHALL NOT BE DISCLOSED WITHOUT PRIOR  #
+#   WRITTEN PERMISSION. LICENSED CUSTOMERS MAY COPY AND       #
+#   ADAPT THIS SOFTWARE FOR THEIR OWN USE IN ACCORDANCE WITH  #
+#   THE TERMS OF THEIR SOFTWARE LICENSE AGREEMENT.            #
+#   ALL OTHER RIGHTS RESERVED.                                #
+#                                                             #
+#   (c) COPYRIGHT 2020 INFOR.  ALL RIGHTS RESERVED.           #
+#   THE WORD AND DESIGN MARKS SET FORTH HEREIN ARE            #
+#   TRADEMARKS AND/OR REGISTERED TRADEMARKS OF INFOR          #
+#   AND/OR ITS AFFILIATES AND SUBSIDIARIES. ALL RIGHTS        #
+#   RESERVED.  ALL OTHER TRADEMARKS LISTED HEREIN ARE         #
+#   THE PROPERTY OF THEIR RESPECTIVE OWNERS.                  #
+#                                                             #
+###############################################################
+#
+# this is the siteInfo file. Items in this file must be of the format
+# key=value
+#
+# sitecolor - this is the color of the bar across the top of the
+#             statusbar. It's the official "corporate red". This value
+#             may be specified via an rgb value in hex (ie: #ff173d)
+#             or a valid color name (eg: red). For a list of available
+#             colors by name see the file /usr/lib/X11/rgb.txt. For
+#             Sun platforms see /usr/openwin/lib/rgb.txt.
+
+sitecolor=#ff173d
+
+# colorbarheight - the height of the bar across the top that shows
+#                  the site color. The height is in pixels.
+#
+
+colorbarheight=3
+
+# sitedescription - A string provides some help information for the site,
+#                   such as "who is working on this site during a period".
+#                   By default it is blank, if not, an icon will be shown
+#                   on the statusbar. Clicking the icon will show/hide
+#                   this string.
+#
+
+sitedescription=""
+
+# Master site selected for this site
+#
+mastersite=
+
+# siteicon    the name of an icon; must be the name of a file
+#             in one of the cloverleaf bitmap directories.  If the
+#             name begins with a "/" it is assumed to be an absolute
+#             pathname to a file.
+
+siteicon=genericSite.xbm
+
+# statusbar - this is a string which defines the items you want
+#             to have in the statusbar. The format is a series
+#             of items separated by the vertical bar character.
+#
+# this keyword may appear in the rootInfo file as well. The
+# siteInfo file will override it though. If you want to customize
+# the statusbar once for all sites, do it in the rootInfo file; if
+# you want to customize by site, do it here.
+#
+# This customization is not particularly fancy, but was thrown
+# in to meet the needs of one of the Cloverleaf 3.1 beta sites.
+# If you like this feature, be sure and let us know so we can
+# expand it in future versions of the product.
+#
+# If there is a problem parsing your statusbar definition, errors
+# will probably appear in a "big red box" or perhaps in a console
+# window or in the window where you started the application.
+#
+# The following characters and keywords have special meaning:
+#
+#   $   the item is the name of an environment variable which
+#       will be displayed in the statusbar. For example, the
+#       value $HCISITE will cause the name of the site to be
+#       displayed in the statusbar.
+#
+#   *   the ritem is the name of a bitmap file. The same
+#       rules apply as for the siteicon keyword.
+#
+#   %   the item is the name of an internally known keyword.
+#       The known keywords are:
+#
+#       %time       provides a real-time clock
+#       %siteicon   the site icon; either a generic bitmap or
+#                   one defined by the key "siteicon" in this file
+#       %sitename   the name of the site. Same as $HCISITE.
+#       %version    the current version of the product; this
+#                   is similar to %rootname, but doesn't have
+#                   "/hci/root" before the version.
+#       %rootname   the name of the current root. Same as $HCIROOT
+#
+#  =   the rest of the item is the name of a unix command to be
+#      executed once, at startup. The output of the command will
+#      be displayed in the statusbar. One example would be
+#      "=hostname", which would display the hostname of the machine
+#      that the GUI is running on
+#
+# If the word has no special character at the start, the text appears
+# as-is. You could use this to put the name of your hospital, for
+# example.
+#
+
+statusbar=%sitename|%siteicon|%version
+
+# here's an alternate version that some people prefer
+#statusbar=%sitename|%rootname|=hostname
+
+
+######################################################################
+# no user servicable parts below this point. In other words, don't
+# change these values unless you are sure of what you are doing.
+######################################################################
+
+# platform - The number identifying the platform on which this site
+#            was created.  This value should match the corresponding
+#            entry in $HCIROOT/rootInfo.
+
+platform=0012
+
+# releasenum - The version number (e.g., 3.3.0) under which this site
+#              was created.  This value should match the corresponding
+#              entry in $HCIROOT/rootInfo.
+
+releasenum=20.1
+
+# releasetype - The release type (i.e., 'A', 'B' or 'P') of the version under
+#               which this site was created.  This value should match
+#               the corresponding entry in $HCIROOT/rootInfo.
+
+releasetype=P
+
+######################################################################
+# LogHistory Feature Configurable Options.
+# Don't change these values unless you are sure of what you are doing.
+######################################################################
+# loghistorymaxlogfiles is the 1st option proceeded by the Engine, and
+# then it is the loghistorymaxdiskuse option when both are configured.
+
+# loghistoryenabled - The number identifying if LogHistory feature is
+#                     enabled for this site, and this is applied to scope of site,
+#                     engine and monitord log are included.
+#                     0 : LogHistory feature is disabled. This is also
+#                         the value by default.
+#                     1 : LogHistory feature is enabled.
+loghistoryenabled=0
+
+# loghistorymaxlogfiles - The number identifying the maximum number of backed-up
+#                         log files which cloverleaf keeps if LogHistoryEnabled=1.
+#                         This is applied to engine and monitord log.
+#
+#                         0 : no limit. This is the default value.
+#                         x (x>0): Keep a maximum of x files.
+loghistorymaxlogfiles=0
+
+# loghistorymaxdiskuse - The number identifying the maximum size (in KB) of total
+#                        backed-up log files which cloverleaf keeps if LogHistoryEnabled=1.
+#                        This is applied to engine and monitord log.
+#
+#                        0 : no limit. This is the default value.
+#                        x (x>0): Keep no more than x KB of backed-up logs.
+loghistorymaxdiskuse=0
+
+#loghistorycompresscommand - The string value identifying the command to
+#                            compress the backed-up log files to save the disk space.
+#
+#                            The value(0/1) of this option is to disable/enable gzip compressing feature in log history
+#                            Before 6.2.0.1, it is the executable name to compress the backed-up log files.
+loghistorycompresscommand=0
+
+#monitordlogcyclesize -      The threshold kilobytes to cycle monitord log automatically
+#
+#                            0: monitord log cycling is disabled at runtime
+#                            x (x>0): monitord log cycling is enabled at runtime when x is reached as the threshold
+#                            The monitor log includes err log
+monitordlogcyclesize=0
+
+#tcllogalignmentdisabled -     The switch to remove tcl output alignment in log which contains information
+#                          about its owner thread and timestamp.
+#
+#                          0: alignment is turned on. This is the default
+#                          x (x>0): alignment is turned off.
+tcllogalignmentdisabled=0
+
+######################################################################
+# SmatHistory Feature Configurable Options.
+# Don't change these values unless you are sure of what you are doing.
+######################################################################
+# smathistorymaxfiles is the 1st option proceeded by the Engine, and
+# then it is the smathistorymaxdiskuse option, smathistorymaxage is the
+# last option to work when all of three options are configured.
+
+# smathistoryenabled - The number identifying if SmatHistory feature is
+#                     enabled for this site, and this is applied to scope of site,
+#                     all SMAT files are included.
+#                     0 : SmatHistory feature is disabled.
+#                         This is the default value.
+#                     1 : SmatHistory feature is enabled.
+smathistoryenabled=0
+
+# smathistorymaxfiles - The value identifying the maximum number of backed-up for a thread.
+#                         groups of SMAT files which the engine keeps if
+#                         SmatHistoryEnabled=1.
+#                         One group means one .msg and its corresponding .idx and .ecd
+#                         This is applied per SMAT.
+#
+#                         0 : no limit. This is the default value.
+#                         x (x>0): Keep a maximum of x files.
+smathistorymaxfiles=0
+
+# smathistorymaxdiskuse - The value identifying the maximum size (in KB) of total
+#                        backed-up SMAT files which the engine keeps if
+#                        SmatHistoryEnabled=1.
+#                        This is applied to all SMAT files.
+#
+#                        0 : no limit. This is the default value.
+#                        x (x>0): Keep no more than x KB of SMAT history files.
+smathistorymaxdiskuse=0
+
+# smathistorymaxage - The value identifying the maximum age in days to keep SMAT
+#                         history files if SmatHistoryEnabled=1.
+#                         This means all SMAT history files whose last modified dates
+#                         are more than x days old will be automatically deleted.
+#
+#                         0 : no limit. This is the default value.
+#                         x (x>0): Delete files more than x days old.
+smathistorymaxage=0
+
+#smathistorycompresscommand - The string value identifying the command to
+#                            compress the backed-up SMAT files to save the disk space.
+#
+#                            The value of this option is the executable name to compress
+#                            the backed-up SMAT files. By default it is set to NULL,
+#                            compressing is disabled. gzip and compress command are
+#                            supported.
+#                            For example: smathistorycompresscommand=gzip
+smathistorycompresscommand=
+
+#smathistorybasethreadname - The number identifying whether SmatHistory is subdivided base
+#                            on thread names or not. If enabled the option, it means that
+#                            it is applied to scope of site, all processes are included.
+#
+#                            0 : This is the default value.
+#                            1 : SmatHistory is subdivided base on thread names.
+smathistorybasethreadname=0
+
+#smathistorylinkpath - The string value identifying the path where SmatHistory should be
+#                      linked. Make sure hciengine has the access permission of it first,
+#                      otherwise the link establishment will fail.
+#                      For example:
+#                          Linux: smathistorylinkpath=/The/real/path
+#                            Win: smathistorylinkpath=C:\The\real\path
+smathistorylinkpath=
+
+##############################################################################################
+# Disk Space and Physical Memory configuration.
+# minfreediskspace is the threshold for disk space, and minfreevmspace for physical memory.
+#
+# hciengine and hcimonitord will terminate during start-up if the physical memory drops below
+#          minfreevmspace or the disk space of the site directory is below minfreediskspace
+# hciengine will shut down gracefully if it detects that the physical memory drops below
+#          minfreevmspace.
+# hciengine will shut down gracefully if it detects that the disk space for the
+#          process directory or database directory drops below minfreediskspace.
+#
+# Both are measured by MegaByte(MB), and default value is 10MB.
+# Minimum values are 1MB for disk space, 5MB for physical memory.
+# PS: vm literally is still tagged in the key.
+#
+minfreediskspace=10
+minfreevmspace=10
+
+
+###############################################################################################
+# XML Error Line Prompt Configuration.
+# xml_err_detail - the maximum number of characters to display from the associated XML document
+#         when parsing or validation errors occur during XML processing. By default, no context
+#         from the associated XML Document is displayed (xml_err_detail=0).
+#         For example:
+#             xml_err_detail=20 will display 20 raw characters: Up to 10 characters before
+#             the line and column number indicated by the error and up to 10 raw characters after.
+#
+xml_err_detail=0
+
+
+###############################################################################################
+# Cloverleaf Internal Database Configuration
+# dbconfiguration - The number identifying the which database will be used for recovery
+#                     and error databases for this site.  This applies to all threads defined in this site.
+#                     Only RDM Embedded database is supported.
+#                     0 : RDM Embedded database. (default)
+dbconfiguration=0
+
+########################################################################
+# monitorinterval - The global interval(in seconds) for monitoring in monitorD.
+#                   5 seconds is the default value.
+monitorinterval=5
+
+
+########################################################################
+# Alert Email Action Defaults Configuration
+# mailfrom      - mail from address, "cloverleaf@infor.com" is the default.
+# mailserver    - SMTP server address, "localhost" is the default.
+# mailport      - SMTP server port, port 25 by default.
+# mailloginuser - user who login SMTP server, "cloverleaf" is the default.
+# mailpassword  - the password for user's login, null is the default.
+# mailusetls    - the option to control SMTP over TLS, "0" is default.
+mailfrom=cloverleaf@infor.com
+mailserver=localhost
+mailport=25
+mailloginuser=
+mailpassword=
+mailusetls=0
+
+########################################################################
+# Cloverleaf Message Archiving Configuration
+# archivedbconnection - The connection name
+# archivelogcycle - The size (in kb) the archive log should be cycled
+#                     0 : maximum size is unlimited, 0 is
+#                        also the value by default. It means unlimited.
+#                     x (x>0): the maximum size is set.
+archivedbconnection=
+archivelogcycle=0
+
+########################################################################
+# Alert Message Content Granularity Configuration
+# only_question_thread - the way alert shows thread information in alert message
+#                        0 - list all threads information
+#                        1 - only list the thread in question
+only_question_thread=0
+
+##################################################################################################
+# Cloverleaf Message Tracing Configuration
+# tracingenabled       - switch to disable or enable tracing feature
+#                         0 - disable tracing, ie, msg will not be traced
+#                         1 - enable tracing feature, ie, msg will be or not be traced based on the
+#                             config of tracing flag set at process, thread level or metadata level.
+# tracingdbtable       - external db table name
+# tracingthreshold     - count threshold of tracing msgs in db cache to archive msgs to external db
+# tracingtimeout       - timeout threshold of tracing msgs in db cache to archive msgs to external db
+# messagetracingmaxage - If msg timestamp is larger than max age, it will not be traced
+tracingenabled=0
+tracingdbtable=
+tracingthreshold=100
+tracingtimeout=600
+messagetracingmaxage=10
+
+##################################################################################################
+# Batch insert configuration for message archive or trace
+# maxmsgarchivebatchnum   - the max messages number in a batch to insert into external db
+#                           the range is 1~5000.
+# maxmsgarchivebatchsize  - the max messages size in a batch to insert into external db
+#                           the range is 0~10240
+#
+maxmsgarchivebatchnum=1000
+maxmsgarchivebatchsize=2048
+
+#################################################################################################
+# Port range:
+# portrangeenabled   - enable port range for command thread, xlate thread and protocol threads 0/1
+# portrangefrom      - port start from, 1025-65535
+# portrangeto        - port end 1025-65535
+#
+# Minimum port number = (total number of processes)X2 + (total number of protocol threads) + 1
+#
+portrangeenabled=0
+portrangefrom=1025
+portrangeto=65535
+
+#################################################################################################
+# Monitord Alert Event log to DB configuration:
+# alerteventlogdbenabled  - alert event log to db.
+#                       0 - disabled by default.
+#                       1 - enabled.
+alerteventlogdbenabled=0
+
+################################################################################################
+# Monitord statistics information exporting to external DB configuration:
+# monitord4stats2db          - exporting engine statistics information to db.
+#                               0 - disabled by default.
+#                               1 - enabled.
+# monitord4stats2dbinterval  - exporting frequency in seconds(15 minutes by default, 15 secs as min one).
+# monitord4stats2dbschema    - stats table list for exporting.
+# monitord4stats2dbsizecycle - stats db file automatic cycling threshold(in KB),
+#                               0 - disable auto cycling
+# monitord4stats2dbhistoryenabled - The number identifying if StatsDBHistory feature is enabled or not.
+#                                   0 : StatsDBHistory feature is disabled. This is the default value.
+#                                   1 : StatsDBHistory feature is enabled.
+# monitord4stats2dbhistorymaxfiles - The value identifying the maximum number of backed-up statistic db for
+#                                    the monitord keeps if StatsDBHistory feature is enabled.
+#                                    0 : no limit. This is the default value.
+#                                    x(x>0): Keep a maximum of x db files within StatsDBhistory folder.
+# monitord4stats2dbhistorymaxdiskuse - The value identifying the maximum size (in KB) of total backed-up statistic
+#                                      dbs for the monitord keeps if StatsDBHistory feature is enabled.
+#                                      0 : no limit. This is the default value.
+#                                      x (x>0): Keep no more than x KB of db files within StatsDBhistory folder.
+# monitord4stats2dbhistorymaxage - The value identifying the maximum age in days to keep total backed-up statistic
+#                                  dbs for the monitord keeps if StatsDBHistory feature is enabled.
+#                                  0 : no limit. This is the default value.
+#                                  x (x>0): Delete db files more than x days old within StatsDBhistory folder.
+# monitord4stats2dbhistorylinkpath - The string value identifying the path where StatsDBHistory should be linked.
+#                                    Make sure hcimonitord has the access permission of it first, otherwise the link
+#                                    establishment will fail.
+#                                    For example:
+#                                        Linux: monitord4stats2dbhistorylinkpath=/The/real/path
+#                                        Win: monitord4stats2dbhistorylinkpath=C:\The\real\path
+
+monitord4stats2db=0
+monitord4stats2dbinterval=900
+monitord4stats2dbschema=host,site,processes,threads,interthreads
+monitord4stats2dbsizecycle=40960
+monitord4stats2dbhistoryenabled=0
+monitord4stats2dbhistorymaxfiles=0
+monitord4stats2dbhistorymaxdiskuse=0
+monitord4stats2dbhistorymaxage=0
+monitord4stats2dbhistorylinkpath=
+site_doc_dest_folder=C:\cloverleaf\cis20.1\integrator\server\tomcat\webapps\sitedoc
+elevatewarningtoerrorforrecparse=false
+elevatewarningtoerrorforrecformat=false
+elevatewarningtoerrorforrecdefload=false
+elevatewarningtoerrorforrecdefquery=false

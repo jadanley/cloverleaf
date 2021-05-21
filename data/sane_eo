@@ -1,0 +1,15 @@
+prologue
+    who:	rabbott
+    date:	Wed Oct 30 13:44:50 CST 1996
+    type:	eo
+    version:	3.0
+end_prologue
+
+{ENABLE {* * * *}}
+{DISABLE {diag * DBUG *}}
+{DISABLE {pti * INFO *}}
+{DISABLE {pti * DBUG *}}
+{DISABLE {icl * INFO *}}
+{DISABLE {icl * DBUG *}}
+{DISABLE {dbi * DBUG *}}
+{DISABLE {msi * DBUG *}}

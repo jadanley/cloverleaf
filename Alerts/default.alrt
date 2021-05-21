@@ -1,0 +1,48 @@
+# Alert config: default.alrt
+#
+prologue
+    who:	twu
+    date:	August 3, 2016 5:07:49 PM CST
+    type:	alrt
+    version:	3.0
+end_prologue
+#
+{ALERT 
+    { NAME Alert_1 }
+    { VALUE vmf }
+    { SOURCE localhost }
+    { MODE actual }
+    { WITH -1 }
+    { COMP {<= 30000} }
+    { FOR once }
+    { WINDOW {* * * * * *} }
+    { ACTION {
+        { notify {} }
+    } }
+}
+{ALERT 
+    { NAME Alert_2 }
+    { VALUE vmf }
+    { SOURCE localhost }
+    { MODE actual }
+    { WITH -1 }
+    { COMP {<= 20000} }
+    { FOR once }
+    { WINDOW {* * * * * *} }
+    { ACTION {
+        { notify {} }
+    } }
+}
+{ALERT 
+    { NAME Alert_3 }
+    { VALUE idle% }
+    { SOURCE localhost }
+    { MODE actual }
+    { WITH -1 }
+    { COMP {<= 5} }
+    { FOR {nmin 5} }
+    { WINDOW {* * * * * *} }
+    { ACTION {
+        { notify {} }
+    } }
+}

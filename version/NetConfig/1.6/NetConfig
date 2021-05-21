@@ -1,0 +1,448 @@
+prologue
+    who:	danley
+    date:	May 26, 2021 5:19:54 PM CDT
+    type:	net
+    version:	3.20
+end_prologue
+process helloworld {
+    { DOMAINNAME localdomain }
+    { EODEFAULT {} }
+    { EOXLATE {} }
+    { ERRDBTPS {
+        { ERRTPSPROCS {
+            { ARGS {} }
+            { PROCS {} }
+            { PROCSCONTROL {} }
+        } }
+        { RETRIES -1 }
+    } }
+    { GRMPARSEREUSE 0 }
+    { HUBNAME localhub }
+    { LOGCYCLESIZE 0 }
+    { MINFREEVMSPACE {} }
+    { MQCONNWAITINT {} }
+    { MQSCHANNEL {} }
+    { MQSPORT {} }
+    { MQSSERVER {} }
+    { MQSYSQUE {} }
+    { MSGSPACELIM 0 }
+    { OVERWRITETHREADBITMAP 0 }
+    { PROCESSBITMAP {} }
+    { SMATCYCLESIZE 0 }
+    { TRACINGDEFAULT 0 }
+    { XLATE {
+        { XLATE_ORDER ANY }
+        { XLATE_SUB_CNT 0 }
+        { XLATE_TCL RESTRICTED }
+        { XLATEMAX 0 }
+        { XLATEMIN 0 }
+        { XLATEPERCENT 100 }
+        { XLATEREPLYROUTETOORIGSRCONLY 1 }
+    } }
+    { XLATESTARTMODE 0 }
+} 
+protocol in {
+    { AUTOSTART 1 }
+    { BITMAP {} }
+    { COORDS {0 0} }
+    { DATAFORMAT {
+        { FRLTYPE offlen }
+        { OFFLEN {
+            { LEN 0 }
+            { OFF 0 }
+        } }
+        { TYPE frl }
+    } }
+    { DATAXLATE {
+        {
+            { CACHEMSG 0 }
+            { DEL_ON_ERR_ROUTE 0 }
+            { ROUTE_DETAILS {
+                {
+                    { DEST out }
+                    { PROCS {
+                        { ARGS {} }
+                        { PROCS {} }
+                        { PROCSCONTROL {} }
+                    } }
+                    { TYPE raw }
+                } 
+            } }
+            { ROUTE_ENABLED 1 }
+            { TRXID _HCI_static_route_ }
+            { WILDCARD OFF }
+        } 
+    } }
+    { EDIBATCH {
+        { IN_DATA {
+            { TYPE {} }
+            { VERSION {} }
+        } }
+        { OUT_DATA {
+            { HEADER {} }
+            { TRIGGER {
+                { COUNT {} }
+                { SCHEDULER {} }
+                { TIMER {} }
+            } }
+            { TYPE {} }
+            { VERSION {} }
+        } }
+    } }
+    { ENCODING ASCII }
+    { ENCODING_BOM_IB 0 }
+    { ENCODING_BOM_OB 0 }
+    { ENCODING_HL7 0 }
+    { ENCODING_XML 0 }
+    { EOCONFIG {} }
+    { ERRDBTPS {
+        { ERRTPSPROCS {
+            { ARGS {} }
+            { PROCS {} }
+            { PROCSCONTROL {} }
+        } }
+        { RETRIES -1 }
+    } }
+    { GROUPS {} }
+    { HOSTDOWN 0 }
+    { ICLSERVERPORT {} }
+    { KEEPMSGONDISK 0 }
+    { META {} }
+    { OBWORKASIB 0 }
+    { OUTBOUNDONLY 0 }
+    { PROCESSNAME helloworld }
+    { PROTOCOL {
+        { IBCRNLCONVERT {} }
+        { INDELAY 0 }
+        { INFILE in.dat }
+        { INFORMAT nl }
+        { OBCRNLCONVERT {} }
+        { OUTAPPEND 1 }
+        { OUTFILE nul: }
+        { OUTFORMAT nl }
+        { RECONNECT 0 }
+        { TYPE file }
+    } }
+    { RECVCONTROL {
+        { ACKCONTROL {
+            { ARGS {} }
+            { PROCS {} }
+            { PROCSCONTROL {} }
+        } }
+        { EOMSG {} }
+        { HOLDMSGS 0 }
+        { MSGPRIO 5120 }
+    } }
+    { REPLYCONTROL {
+        { OBRESEND 1 }
+        { REPLYGEN {
+            { TYPE none }
+        } }
+        { TIMEOUT -1 }
+        { WAIT 0 }
+    } }
+    { REPLYFORMAT {
+        { FRLTYPE offlen }
+        { OFFLEN {
+            { LEN 0 }
+            { OFF 0 }
+        } }
+        { TYPE frl }
+    } }
+    { REPLYXLATE {
+ 
+    } }
+    { SAVEMSGS {
+        { INARCHIVE {} }
+        { INARCHIVEPROC {} }
+        { INARCHIVETHRESHOLD 15 }
+        { INARCHIVETIMEOUT 600 }
+        { INFILE {} }
+        { INSAVE 0 }
+        { INSAVERESENT 0 }
+        { OUTARCHIVE {} }
+        { OUTARCHIVEPROC {} }
+        { OUTARCHIVETHRESHOLD 15 }
+        { OUTARCHIVETIMEOUT 600 }
+        { OUTFILE {} }
+        { OUTSAVE 0 }
+        { SAVEINARCHIVE 0 }
+        { SAVEOUTARCHIVE 0 }
+        { SAVETRACING 0 }
+    } }
+    { SCHEDULE {} }
+    { SENDDATACTRL {
+        { FAILPROCS {
+            { ARGS {} }
+            { PROCS {} }
+            { PROCSCONTROL {} }
+        } }
+        { FORWARDTHREAD {} }
+        { HOLDMSGS 0 }
+        { INTERVAL 10 }
+        { OKPROCS {
+            { ARGS {} }
+            { PROCS {} }
+            { PROCSCONTROL {} }
+        } }
+        { PREWRITEPROCS {{ARGS {}} {PROCS {}} {PROCSCONTROL {}}} }
+        { RETRIES -1 }
+    } }
+    { SENDREPLYCTRL {
+        { FAILPROCS {
+            { ARGS {} }
+            { PROCS {} }
+            { PROCSCONTROL {} }
+        } }
+        { FORWARDTHREAD {} }
+        { HOLDMSGS 0 }
+        { INTERVAL 10 }
+        { OKPROCS {
+            { ARGS {} }
+            { PROCS {} }
+            { PROCSCONTROL {} }
+        } }
+        { PREWRITEPROCS {{ARGS {}} {PROCS {}} {PROCSCONTROL {}}} }
+        { RETRIES -1 }
+    } }
+    { SMS {
+        { FWD_DATA {
+            { ARGS {} }
+            { PROCS {} }
+            { PROCSCONTROL {} }
+        } }
+        { FWD_REPLY {
+            { ARGS {} }
+            { PROCS {} }
+            { PROCSCONTROL {} }
+        } }
+        { IN_DATA {
+            { ARGS {} }
+            { PROCS {} }
+            { PROCSCONTROL {} }
+            { THREADED 0 }
+        } }
+        { IN_REPLY {
+            { ARGS {} }
+            { PROCS {} }
+            { PROCSCONTROL {} }
+        } }
+        { OUT_DATA {
+            { ARGS {} }
+            { PROCS {} }
+            { PROCSCONTROL {} }
+            { THREADED 0 }
+        } }
+        { OUT_REPLY {
+            { ARGS {} }
+            { PROCS {} }
+            { PROCSCONTROL {} }
+        } }
+    } }
+    { STARTPROCS {
+        { ARGS {} }
+        { PROCS {} }
+        { PROCSCONTROL {} }
+    } }
+    { STOPPROCS {
+        { ARGS {} }
+        { PROCS {} }
+        { PROCSCONTROL {} }
+    } }
+    { SYMNAME in }
+    { USERECOVERDB 1 }
+} 
+protocol out {
+    { AUTOSTART 1 }
+    { BITMAP {} }
+    { COORDS {0 0} }
+    { DATAFORMAT {
+        { FRLTYPE offlen }
+        { OFFLEN {
+            { LEN 0 }
+            { OFF 0 }
+        } }
+        { TYPE frl }
+    } }
+    { DATAXLATE {
+ 
+    } }
+    { EDIBATCH {
+        { IN_DATA {
+            { TYPE {} }
+            { VERSION {} }
+        } }
+        { OUT_DATA {
+            { HEADER {} }
+            { TRIGGER {
+                { COUNT {} }
+                { SCHEDULER {} }
+                { TIMER {} }
+            } }
+            { TYPE {} }
+            { VERSION {} }
+        } }
+    } }
+    { ENCODING ASCII }
+    { ENCODING_BOM_IB 0 }
+    { ENCODING_BOM_OB 0 }
+    { ENCODING_HL7 0 }
+    { ENCODING_XML 0 }
+    { EOCONFIG {} }
+    { ERRDBTPS {
+        { ERRTPSPROCS {
+            { ARGS {} }
+            { PROCS {} }
+            { PROCSCONTROL {} }
+        } }
+        { RETRIES -1 }
+    } }
+    { GROUPS {} }
+    { HOSTDOWN 0 }
+    { ICLSERVERPORT {} }
+    { KEEPMSGONDISK 0 }
+    { META {} }
+    { OBWORKASIB 0 }
+    { OUTBOUNDONLY 0 }
+    { PROCESSNAME helloworld }
+    { PROTOCOL {
+        { IBCRNLCONVERT {} }
+        { INDELAY 0 }
+        { INFILE {} }
+        { INFORMAT nl }
+        { OBCRNLCONVERT {} }
+        { OUTAPPEND 1 }
+        { OUTFILE out.dat }
+        { OUTFORMAT nl }
+        { RECONNECT 0 }
+        { TYPE file }
+    } }
+    { RECVCONTROL {
+        { ACKCONTROL {
+            { ARGS {} }
+            { PROCS {} }
+            { PROCSCONTROL {} }
+        } }
+        { EOMSG {} }
+        { HOLDMSGS 0 }
+        { MSGPRIO 5120 }
+    } }
+    { REPLYCONTROL {
+        { OBRESEND 1 }
+        { REPLYGEN {
+            { TYPE none }
+        } }
+        { TIMEOUT -1 }
+        { WAIT 0 }
+    } }
+    { REPLYFORMAT {
+        { FRLTYPE offlen }
+        { OFFLEN {
+            { LEN 0 }
+            { OFF 0 }
+        } }
+        { TYPE frl }
+    } }
+    { REPLYXLATE {
+ 
+    } }
+    { SAVEMSGS {
+        { INARCHIVE {} }
+        { INARCHIVEPROC {} }
+        { INARCHIVETHRESHOLD 15 }
+        { INARCHIVETIMEOUT 600 }
+        { INFILE {} }
+        { INSAVE 0 }
+        { INSAVERESENT 0 }
+        { OUTARCHIVE {} }
+        { OUTARCHIVEPROC {} }
+        { OUTARCHIVETHRESHOLD 15 }
+        { OUTARCHIVETIMEOUT 600 }
+        { OUTFILE {} }
+        { OUTSAVE 0 }
+        { SAVEINARCHIVE 0 }
+        { SAVEOUTARCHIVE 0 }
+        { SAVETRACING 0 }
+    } }
+    { SCHEDULE {} }
+    { SENDDATACTRL {
+        { FAILPROCS {
+            { ARGS {} }
+            { PROCS {} }
+            { PROCSCONTROL {} }
+        } }
+        { FORWARDTHREAD {} }
+        { HOLDMSGS 0 }
+        { INTERVAL 10 }
+        { OKPROCS {
+            { ARGS {} }
+            { PROCS {} }
+            { PROCSCONTROL {} }
+        } }
+        { PREWRITEPROCS {{ARGS {}} {PROCS {}} {PROCSCONTROL {}}} }
+        { RETRIES -1 }
+    } }
+    { SENDREPLYCTRL {
+        { FAILPROCS {
+            { ARGS {} }
+            { PROCS {} }
+            { PROCSCONTROL {} }
+        } }
+        { FORWARDTHREAD {} }
+        { HOLDMSGS 0 }
+        { INTERVAL 10 }
+        { OKPROCS {
+            { ARGS {} }
+            { PROCS {} }
+            { PROCSCONTROL {} }
+        } }
+        { PREWRITEPROCS {{ARGS {}} {PROCS {}} {PROCSCONTROL {}}} }
+        { RETRIES -1 }
+    } }
+    { SMS {
+        { FWD_DATA {
+            { ARGS {} }
+            { PROCS {} }
+            { PROCSCONTROL {} }
+        } }
+        { FWD_REPLY {
+            { ARGS {} }
+            { PROCS {} }
+            { PROCSCONTROL {} }
+        } }
+        { IN_DATA {
+            { ARGS {} }
+            { PROCS {} }
+            { PROCSCONTROL {} }
+            { THREADED 0 }
+        } }
+        { IN_REPLY {
+            { ARGS {} }
+            { PROCS {} }
+            { PROCSCONTROL {} }
+        } }
+        { OUT_DATA {
+            { ARGS {} }
+            { PROCS {} }
+            { PROCSCONTROL {} }
+            { THREADED 0 }
+        } }
+        { OUT_REPLY {
+            { ARGS {} }
+            { PROCS {} }
+            { PROCSCONTROL {} }
+        } }
+    } }
+    { STARTPROCS {
+        { ARGS {} }
+        { PROCS {} }
+        { PROCSCONTROL {} }
+    } }
+    { STOPPROCS {
+        { ARGS {} }
+        { PROCS {} }
+        { PROCSCONTROL {} }
+    } }
+    { SYMNAME out }
+    { USERECOVERDB 1 }
+} 

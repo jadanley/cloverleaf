@@ -1,0 +1,3 @@
+[jvm]
+start_dir=$SITEPATH\javadriver\helloworld
+classpath=$ROOTPATH/lib/java/JavaDriver.jar

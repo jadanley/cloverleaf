@@ -1,0 +1,332 @@
+prologue
+    who:	hciuser
+    date:	March 31, 2006 4:09:28 PM CST
+    type:	net
+    version:	3.20
+end_prologue
+process helloworld {
+    { DOMAINNAME localdomain }
+    { EODEFAULT {} }
+    { EOXLATE {} }
+    { HUBNAME localhub }
+    { LOGCYCLESIZE 0 }
+    { MQSCHANNEL {} }
+    { MQSPORT {} }
+    { MQSSERVER {} }
+    { MSGSPACELIM 0 }
+    { XLATE {
+        { XLATEMAX 0 }
+        { XLATEMIN 0 }
+        { XLATEPERCENT 100 }
+    } }
+    { XLATESTARTMODE 0 }
+} 
+protocol in {
+    { AUTOSTART 1 }
+    { BITMAP {} }
+    { COORDS {0 0} }
+    { DATAFORMAT {
+        { FRLTYPE offlen }
+        { OFFLEN {
+            { LEN 0 }
+            { OFF 0 }
+        } }
+        { TYPE frl }
+    } }
+    { DATAXLATE {
+        {
+            { ROUTE_DETAILS {
+                {
+                    { DEST out }
+                    { PROCS {
+                        { ARGS {} }
+                        { PROCS {} }
+                    } }
+                    { TYPE raw }
+                } 
+            } }
+            { TRXID _HCI_static_route_ }
+            { WILDCARD OFF }
+        } 
+    } }
+    { EDIBATCH {
+        { IN_DATA {
+            { TYPE {} }
+            { VERSION {} }
+        } }
+        { OUT_DATA {
+            { HEADER {} }
+            { TRIGGER {
+                { COUNT {} }
+                { SCHEDULER {} }
+                { TIMER {} }
+            } }
+            { TYPE {} }
+            { VERSION {} }
+        } }
+    } }
+    { EOCONFIG {} }
+    { GATEWAYTHREADTYPE external }
+    { GROUPS {} }
+    { HOSTDOWN 0 }
+    { KEEPMSGONDISK 0 }
+    { OUTBOUNDONLY 0 }
+    { PROCESSNAME helloworld }
+    { PROTOCOL {
+        { INDELAY 0 }
+        { INFILE in.dat }
+        { INFORMAT nl }
+        { OUTAPPEND 1 }
+        { OUTFILE nul: }
+        { OUTFORMAT nl }
+        { RECONNECT 0 }
+        { TYPE file }
+    } }
+    { RECVCONTROL {
+        { ACKCONTROL {
+            { ARGS {} }
+            { PROCS {} }
+        } }
+        { EOMSG {} }
+        { MSGPRIO 5120 }
+    } }
+    { REPLYCONTROL {
+        { REPLYGEN {
+            { TYPE none }
+        } }
+        { TIMEOUT -1 }
+        { WAIT 0 }
+    } }
+    { REPLYFORMAT {
+        { FRLTYPE offlen }
+        { OFFLEN {
+            { LEN 0 }
+            { OFF 0 }
+        } }
+        { TYPE frl }
+    } }
+    { REPLYXLATE {
+ 
+    } }
+    { SAVEMSGS {
+        { INFILE {} }
+        { INSAVE 0 }
+        { OUTFILE {} }
+        { OUTSAVE 0 }
+    } }
+    { SCHEDULE {} }
+    { SENDDATACTRL {
+        { FAILPROCS {
+            { ARGS {} }
+            { PROCS {} }
+        } }
+        { FORWARDTHREAD {} }
+        { HOLDMSGS 0 }
+        { INTERVAL 10 }
+        { OKPROCS {
+            { ARGS {} }
+            { PROCS {} }
+        } }
+        { PREWRITEPROCS {{ARGS {}} {PROCS {}}} }
+        { RETRIES -1 }
+    } }
+    { SENDREPLYCTRL {
+        { FAILPROCS {
+            { ARGS {} }
+            { PROCS {} }
+        } }
+        { FORWARDTHREAD {} }
+        { HOLDMSGS 0 }
+        { INTERVAL 10 }
+        { OKPROCS {
+            { ARGS {} }
+            { PROCS {} }
+        } }
+        { PREWRITEPROCS {{ARGS {}} {PROCS {}}} }
+        { RETRIES -1 }
+    } }
+    { SMS {
+        { FWD_DATA {
+            { ARGS {} }
+            { PROCS {} }
+        } }
+        { FWD_REPLY {
+            { ARGS {} }
+            { PROCS {} }
+        } }
+        { IN_DATA {
+            { ARGS {} }
+            { PROCS {} }
+        } }
+        { IN_REPLY {
+            { ARGS {} }
+            { PROCS {} }
+        } }
+        { OUT_DATA {
+            { ARGS {} }
+            { PROCS {} }
+        } }
+        { OUT_REPLY {
+            { ARGS {} }
+            { PROCS {} }
+        } }
+    } }
+    { STARTPROCS {
+        { ARGS {} }
+        { PROCS {} }
+    } }
+    { STOPPROCS {
+        { ARGS {} }
+        { PROCS {} }
+    } }
+    { SYMNAME in }
+    { USERECOVERDB 1 }
+} 
+protocol out {
+    { AUTOSTART 1 }
+    { BITMAP {} }
+    { COORDS {0 0} }
+    { DATAFORMAT {
+        { FRLTYPE offlen }
+        { OFFLEN {
+            { LEN 0 }
+            { OFF 0 }
+        } }
+        { TYPE frl }
+    } }
+    { DATAXLATE {
+ 
+    } }
+    { EDIBATCH {
+        { IN_DATA {
+            { TYPE {} }
+            { VERSION {} }
+        } }
+        { OUT_DATA {
+            { HEADER {} }
+            { TRIGGER {
+                { COUNT {} }
+                { SCHEDULER {} }
+                { TIMER {} }
+            } }
+            { TYPE {} }
+            { VERSION {} }
+        } }
+    } }
+    { EOCONFIG {} }
+    { GATEWAYTHREADTYPE external }
+    { GROUPS {} }
+    { HOSTDOWN 0 }
+    { KEEPMSGONDISK 0 }
+    { OUTBOUNDONLY 0 }
+    { PROCESSNAME helloworld }
+    { PROTOCOL {
+        { INDELAY 0 }
+        { INFILE {} }
+        { INFORMAT nl }
+        { OUTAPPEND 1 }
+        { OUTFILE out.dat }
+        { OUTFORMAT nl }
+        { RECONNECT 0 }
+        { TYPE file }
+    } }
+    { RECVCONTROL {
+        { ACKCONTROL {
+            { ARGS {} }
+            { PROCS {} }
+        } }
+        { EOMSG {} }
+        { MSGPRIO 5120 }
+    } }
+    { REPLYCONTROL {
+        { REPLYGEN {
+            { TYPE none }
+        } }
+        { TIMEOUT -1 }
+        { WAIT 0 }
+    } }
+    { REPLYFORMAT {
+        { FRLTYPE offlen }
+        { OFFLEN {
+            { LEN 0 }
+            { OFF 0 }
+        } }
+        { TYPE frl }
+    } }
+    { REPLYXLATE {
+ 
+    } }
+    { SAVEMSGS {
+        { INFILE {} }
+        { INSAVE 0 }
+        { OUTFILE {} }
+        { OUTSAVE 0 }
+    } }
+    { SCHEDULE {} }
+    { SENDDATACTRL {
+        { FAILPROCS {
+            { ARGS {} }
+            { PROCS {} }
+        } }
+        { FORWARDTHREAD {} }
+        { HOLDMSGS 0 }
+        { INTERVAL 10 }
+        { OKPROCS {
+            { ARGS {} }
+            { PROCS {} }
+        } }
+        { PREWRITEPROCS {{ARGS {}} {PROCS {}}} }
+        { RETRIES -1 }
+    } }
+    { SENDREPLYCTRL {
+        { FAILPROCS {
+            { ARGS {} }
+            { PROCS {} }
+        } }
+        { FORWARDTHREAD {} }
+        { HOLDMSGS 0 }
+        { INTERVAL 10 }
+        { OKPROCS {
+            { ARGS {} }
+            { PROCS {} }
+        } }
+        { PREWRITEPROCS {{ARGS {}} {PROCS {}}} }
+        { RETRIES -1 }
+    } }
+    { SMS {
+        { FWD_DATA {
+            { ARGS {} }
+            { PROCS {} }
+        } }
+        { FWD_REPLY {
+            { ARGS {} }
+            { PROCS {} }
+        } }
+        { IN_DATA {
+            { ARGS {} }
+            { PROCS {} }
+        } }
+        { IN_REPLY {
+            { ARGS {} }
+            { PROCS {} }
+        } }
+        { OUT_DATA {
+            { ARGS {} }
+            { PROCS {} }
+        } }
+        { OUT_REPLY {
+            { ARGS {} }
+            { PROCS {} }
+        } }
+    } }
+    { STARTPROCS {
+        { ARGS {} }
+        { PROCS {} }
+    } }
+    { STOPPROCS {
+        { ARGS {} }
+        { PROCS {} }
+    } }
+    { SYMNAME out }
+    { USERECOVERDB 1 }
+} 

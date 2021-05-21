@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 3 U (http://www.xmlspy.com) by James Danley (HEALTHvision Inc.) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="ADMIT">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ID"  type="xs:string" minOccurs="0"/>
+				<xs:element name="NAMELAST" type="xs:string" minOccurs="0"/>
+				<xs:element name="NAMEFIRST" type="xs:string" minOccurs="0"/>
+				<xs:element name="NAMEMIDDLE" type="xs:string" minOccurs="0"/>
+				<xs:element name="ADDRESS" type="xs:string" minOccurs="0"/>
+				<xs:element name="CITY" type="xs:string" minOccurs="0"/>
+				<xs:element name="STATE" type="xs:string" minOccurs="0"/>
+				<xs:element name="ZIP" type="xs:string" minOccurs="0"/>
+				<xs:element name="RACE" type="xs:string" minOccurs="0"/>
+				<xs:element name="SEX" type="xs:string" minOccurs="0"/>
+				<xs:element name="MARITALSTATUS" type="xs:string" minOccurs="0"/>
+				<xs:element name="DOB" type="xs:string" minOccurs="0"/>
+				<xs:element name="FEED" type="xs:string" minOccurs="0"/>
+				<xs:element name="CLASS" type="xs:string" minOccurs="0"/>
+				<xs:element name="ATTENDDOCTOR" type="xs:string" minOccurs="0"/>
+				<xs:element name="VISIT" type="xs:string" minOccurs="0"/>
+				<xs:element name="ALLERGIES" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+<xs:element name="XFER">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ID" type="xs:string" minOccurs="0"/>
+				<xs:element name="NAMELAST" type="xs:string" minOccurs="0"/>
+				<xs:element name="NAMEFIRST" type="xs:string" minOccurs="0"/>
+				<xs:element name="NAMEMIDDLE" type="xs:string" minOccurs="0"/>
+				<xs:element name="ADDRESS" type="xs:string" minOccurs="0"/>
+				<xs:element name="CITY" type="xs:string" minOccurs="0"/>
+				<xs:element name="STATE" type="xs:string" minOccurs="0"/>
+				<xs:element name="ZIP" type="xs:string" minOccurs="0"/>
+				<xs:element name="RACE" type="xs:string" minOccurs="0"/>
+				<xs:element name="SEX" type="xs:string" minOccurs="0"/>
+				<xs:element name="MARITALSTATUS" type="xs:string" minOccurs="0"/>
+				<xs:element name="DOB" type="xs:string" minOccurs="0"/>
+				<xs:element name="FEED" type="xs:string" minOccurs="0"/>
+				<xs:element name="CLASS" type="xs:string" minOccurs="0"/>
+				<xs:element name="ATTENDDOCTOR" type="xs:string" minOccurs="0"/>
+				<xs:element name="VISIT" type="xs:string" minOccurs="0"/>
+				<xs:element name="ALLERGIES" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+<xs:element name="DISC">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ID" type="xs:string" minOccurs="0"/>
+				<xs:element name="NAMELAST" type="xs:string" minOccurs="0"/>
+				<xs:element name="NAMEFIRST" type="xs:string" minOccurs="0"/>
+				<xs:element name="NAMEMIDDLE" type="xs:string" minOccurs="0"/>
+				<xs:element name="ADDRESS" type="xs:string" minOccurs="0"/>
+				<xs:element name="CITY" type="xs:string" minOccurs="0"/>
+				<xs:element name="STATE" type="xs:string" minOccurs="0"/>
+				<xs:element name="ZIP" type="xs:string" minOccurs="0"/>
+				<xs:element name="RACE" type="xs:string" minOccurs="0"/>
+				<xs:element name="SEX" type="xs:string" minOccurs="0"/>
+				<xs:element name="MARITALSTATUS" type="xs:string" minOccurs="0"/>
+				<xs:element name="DOB" type="xs:string" minOccurs="0"/>
+				<xs:element name="FEED" type="xs:string" minOccurs="0"/>
+				<xs:element name="CLASS" type="xs:string" minOccurs="0"/>
+				<xs:element name="ATTENDDOCTOR" type="xs:string" minOccurs="0"/>
+				<xs:element name="VISIT" type="xs:string" minOccurs="0"/>
+				<xs:element name="ALLERGIES" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

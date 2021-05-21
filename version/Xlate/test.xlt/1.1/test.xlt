@@ -1,0 +1,14 @@
+prologue
+    xlt_infile:	hl7 2.1  ADT_A01
+    who:	jdanley
+    date:	February 18, 2021 4:26:13 PM CST
+    xlt_outfile:	hl7 2.3  ADT_A01
+    type:	xlt
+    version:	7.0
+end_prologue
+
+{ { OP COPY } 
+    { ERR 0 }
+    { IN {} }
+    { OUT {} }
+}

@@ -1,0 +1,7 @@
+#This index file is used by the GUI
+#It is maintained by the mktclindex and should not be edited manually.
+#Removing or editing this file will prevent the GUI from displaying
+#Information properly.
+#Format: { {<upoc type>} {<procname>} {<filename>} ?{<usage>}?}
+
+{{unknown} {hi} {demo.tcl}}

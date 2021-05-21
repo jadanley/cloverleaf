@@ -1,0 +1,1469 @@
+<?xml version="1.0"?>
+<!DOCTYPE TransactionResponse SYSTEM "/home/royals/qdx5.1/bpms/apps/conf/T278/x12-278b-Royal.dtd">
+<TransactionResponse>
+    <InterchangeControlHeader SegId="ISA">
+        <AuthorInfoQualifier>Text</AuthorInfoQualifier>
+        <AuthorInformation>Text</AuthorInformation>
+        <SecurityInfoQual>Text</SecurityInfoQual>
+        <SecurityInformation>Text</SecurityInformation>
+        <InterchangeIDQual>Text</InterchangeIDQual>
+        <InterchangeSenderID>ROYTUM</InterchangeSenderID>
+        <InterchangeIDQual>Text</InterchangeIDQual>
+        <InterchangeReceiverID>MCTM</InterchangeReceiverID>
+        <InterchangeDate>04/29/03</InterchangeDate>
+        <InterchangeTime>07:03</InterchangeTime>
+        <InterCtrlStandIdent>Text</InterCtrlStandIdent>
+        <InterCtrlVersionNum>Text</InterCtrlVersionNum>
+        <InterCtrlNumber>-126801799</InterCtrlNumber>
+        <AckRequested>Text</AckRequested>
+        <UsageIndicator>Text</UsageIndicator>
+        <ComponentElemSeparator>:</ComponentElemSeparator>
+    </InterchangeControlHeader>
+    <FunctionalGroupHeader SegId="GS">
+        <FunctionalIDCode>121</FunctionalIDCode>
+        <ApplicationSenderCode>Royal UMCM</ApplicationSenderCode>
+        <ApplicationReceiverCode>NHP</ApplicationReceiverCode>
+        <Date>04/29/03</Date>
+        <Time>07:03</Time>
+        <GroupCtrlNumber>34522</GroupCtrlNumber>
+        <ResponsibleAgencyCode>Text</ResponsibleAgencyCode>
+        <VerReleaseIDCode>UM 1.0 release 55</VerReleaseIDCode>
+    </FunctionalGroupHeader>
+    <TransactionSetHeader SegId="ST">
+        <TSIDCode>278</TSIDCode>
+        <TSControlNumber>5516</TSControlNumber>
+    </TransactionSetHeader>
+    <BeginningOfHierarchicalTransaction SegId="BHT">
+        <HierarchStructCode>0078</HierarchStructCode>
+        <TSPurposeCode>13</TSPurposeCode>
+        <ReferenceIdent>022130001</ReferenceIdent>
+        <Date>20030429</Date>
+        <Time>070347</Time>
+        <TransactionTypeCode>18</TransactionTypeCode>
+    </BeginningOfHierarchicalTransaction>
+    <UMOLevelLoop>
+        <UMOLevel SegId="HL">
+            <HierarchIDNumber>1</HierarchIDNumber>
+            <HierarchLevelCode>20</HierarchLevelCode>
+            <HierarchChildCode>1</HierarchChildCode>
+        </UMOLevel>
+        <UMONameLoop>
+            <UMOName SegId="NM1">
+                <EntityIDCode>X3</EntityIDCode>
+                <EntityTypeQualifier>2</EntityTypeQualifier>
+                <NameLastOrgName>Text</NameLastOrgName>
+                <NameFirst>Text</NameFirst>
+                <NameMiddle>Text</NameMiddle>
+                <NameSuffix>Text</NameSuffix>
+                <IDCodeQualifier>XV</IDCodeQualifier>
+                <IDCode>123456 TBD</IDCode>
+            </UMOName>
+            <UMOContactInformation SegId="PER">
+                <ContactFunctCode>IC</ContactFunctCode>
+                <Name>26</Name>
+            </UMOContactInformation>
+        </UMONameLoop>
+    </UMOLevelLoop>
+    <RequesterLevelLoop>
+        <RequesterLevel SegId="HL">
+            <HierarchIDNumber>2</HierarchIDNumber>
+            <HierarchParentID>0001</HierarchParentID>
+            <HierarchLevelCode>21</HierarchLevelCode>
+            <HierarchChildCode>1</HierarchChildCode>
+        </RequesterLevel>
+        <RequesterNameLoop>
+            <RequesterName SegId="NM1">
+                <EntityIDCode>1P</EntityIDCode>
+                <EntityTypeQualifier>2</EntityTypeQualifier>
+                <NameLastOrgName>null</NameLastOrgName>
+                <IDCodeQualifier>24</IDCodeQualifier>
+                <IDCode>26674101</IDCode>
+            </RequesterName>
+            <RequesterSupplementalIdentification SegId="REF">
+                <ReferenceIdentQual>ZH</ReferenceIdentQual>
+                <ReferenceIdent>26674101</ReferenceIdent>
+            </RequesterSupplementalIdentification>
+            <RequesterProviderInformation SegId="PRV">
+                <ProviderCode>RF</ProviderCode>
+                <ReferenceIdentQual>ZZ</ReferenceIdentQual>
+                <ReferenceIdent>15001</ReferenceIdent>
+            </RequesterProviderInformation>
+        </RequesterNameLoop>
+    </RequesterLevelLoop>
+    <SubscriberLevelLoop>
+        <SubscriberLevel SegId="HL">
+            <HierarchIDNumber>3</HierarchIDNumber>
+            <HierarchParentID>0001</HierarchParentID>
+            <HierarchLevelCode>22</HierarchLevelCode>
+            <HierarchChildCode>1</HierarchChildCode>
+        </SubscriberLevel>
+        <SubscriberDiagnosis SegId="HI">
+            <HealthCareCodeInfo>BF:25010</HealthCareCodeInfo>
+        </SubscriberDiagnosis>
+        <SubscriberNameLoop>
+            <SubscriberName SegId="NM1">
+                <EntityIDCode>IL</EntityIDCode>
+                <EntityTypeQualifier>1</EntityTypeQualifier>
+                <NameLastOrgName>TEST</NameLastOrgName>
+                <NameFirst>UAT</NameFirst>
+                <NameMiddle>null</NameMiddle>
+                <NameSuffix>Text</NameSuffix>
+                <IDCodeQualifier>MI</IDCodeQualifier>
+                <IDCode>77777962401</IDCode>
+            </SubscriberName>
+        </SubscriberNameLoop>
+    </SubscriberLevelLoop>
+    <ServiceProviderLevelLoop>
+        <ServiceProviderLevel SegId="HL">
+            <HierarchIDNumber>4</HierarchIDNumber>
+            <HierarchParentID>0001</HierarchParentID>
+            <HierarchLevelCode>19</HierarchLevelCode>
+            <HierarchChildCode>1</HierarchChildCode>
+        </ServiceProviderLevel>
+        <MessageText SegId="MSG">
+            <FreeFormMessageTxt></FreeFormMessageTxt>
+        </MessageText>
+        <ServiceProviderNameLoop>
+            <ServiceProviderName SegId="NM1">
+                <EntityIDCode>1T</EntityIDCode>
+                <EntityTypeQualifier>2</EntityTypeQualifier>
+                <NameLastOrgName>PRV</NameLastOrgName>
+                <NameFirst>NONPAR</NameFirst>
+                <NameMiddle>null</NameMiddle>
+            </ServiceProviderName>
+            <ServiceProviderSupplementalIdentification SegId="REF">
+                <ReferenceIdentQual>ZH</ReferenceIdentQual>
+                <ReferenceIdent>777</ReferenceIdent>
+            </ServiceProviderSupplementalIdentification>
+            <ServiceProviderInformation SegId="PRV">
+                <ProviderCode>CO</ProviderCode>
+                <ReferenceIdentQual>ZZ</ReferenceIdentQual>
+                <ReferenceIdent>null</ReferenceIdent>
+            </ServiceProviderInformation>
+        </ServiceProviderNameLoop>
+        <ServiceLevelLoop>
+            <ServiceLevel SegId="HL">
+                <HierarchIDNumber>6</HierarchIDNumber>
+                <HierarchParentID>4</HierarchParentID>
+                <HierarchLevelCode>SS</HierarchLevelCode>
+                <HierarchChildCode>0</HierarchChildCode>
+            </ServiceLevel>
+            <ServiceTraceNumber SegId="TRN">
+                <TraceTypeCode>1</TraceTypeCode>
+                <ReferenceIdent>122906</ReferenceIdent>
+                <OriginatingCompanyID>RoyalUM</OriginatingCompanyID>
+            </ServiceTraceNumber>
+            <HealthCareServicesReviewInformation SegId="UM">
+                <RequestCategoryCode>HS</RequestCategoryCode>
+                <CertificateTypeCode>5</CertificateTypeCode>
+            </HealthCareServicesReviewInformation>
+        </ServiceLevelLoop>
+    </ServiceProviderLevelLoop>
+    <ServiceProviderLevelLoop>
+        <ServiceProviderLevel SegId="HL">
+            <HierarchIDNumber>4</HierarchIDNumber>
+            <HierarchParentID>0002</HierarchParentID>
+            <HierarchLevelCode>19</HierarchLevelCode>
+            <HierarchChildCode>1</HierarchChildCode>
+        </ServiceProviderLevel>
+        <MessageText SegId="MSG">
+            <FreeFormMessageTxt></FreeFormMessageTxt>
+        </MessageText>
+        <ServiceProviderNameLoop>
+            <ServiceProviderName SegId="NM1">
+                <EntityIDCode>1T</EntityIDCode>
+                <EntityTypeQualifier>2</EntityTypeQualifier>
+                <NameLastOrgName>PRV</NameLastOrgName>
+                <NameFirst>NONPAR</NameFirst>
+                <NameMiddle>null</NameMiddle>
+            </ServiceProviderName>
+            <ServiceProviderSupplementalIdentification SegId="REF">
+                <ReferenceIdentQual>ZH</ReferenceIdentQual>
+                <ReferenceIdent>777</ReferenceIdent>
+            </ServiceProviderSupplementalIdentification>
+            <ServiceProviderInformation SegId="PRV">
+                <ProviderCode>CO</ProviderCode>
+                <ReferenceIdentQual>ZZ</ReferenceIdentQual>
+                <ReferenceIdent>null</ReferenceIdent>
+            </ServiceProviderInformation>
+        </ServiceProviderNameLoop>
+        <ServiceLevelLoop>
+            <ServiceLevel SegId="HL">
+                <HierarchIDNumber>6</HierarchIDNumber>
+                <HierarchParentID>4</HierarchParentID>
+                <HierarchLevelCode>SS</HierarchLevelCode>
+                <HierarchChildCode>0</HierarchChildCode>
+            </ServiceLevel>
+            <ServiceTraceNumber SegId="TRN">
+                <TraceTypeCode>1</TraceTypeCode>
+                <ReferenceIdent>122906</ReferenceIdent>
+                <OriginatingCompanyID>RoyalUM</OriginatingCompanyID>
+            </ServiceTraceNumber>
+            <HealthCareServicesReviewInformation SegId="UM">
+                <RequestCategoryCode>HS</RequestCategoryCode>
+                <CertificateTypeCode>5</CertificateTypeCode>
+                <ServiceTypeCode>54</ServiceTypeCode>
+                <HealthCareServLoc>70:B</HealthCareServLoc>
+                <LevelOfServCode>03</LevelOfServCode>
+            </HealthCareServicesReviewInformation>
+            <HealthCareServicesReview>
+                <ActionCode>A1</ActionCode>
+                <ReferenceIdent>002700</ReferenceIdent>
+                <RejectReasonCode>2</RejectReasonCode>
+                <YesNoCondRespCode>Y</YesNoCondRespCode>
+            </HealthCareServicesReview>
+            <ServiceDate SegId="DTP">
+                <DateTimeQualifier>472</DateTimeQualifier>
+                <DateTimeFormatQual>RD8</DateTimeFormatQual>
+                <DateTimePeriod>20030502-20030502</DateTimePeriod>
+            </ServiceDate>
+            <CertificationIssueDate SegId="DTP">
+                <DateTimeQualifier>102</DateTimeQualifier>
+                <DateTimeFormatQual>D8</DateTimeFormatQual>
+                <DateTimePeriod>20030429</DateTimePeriod>
+            </CertificationIssueDate>
+            <Procedures SegId="HI">
+                <HealthCareCodeInfo>BO:99212:RD8:20030502-20030502::1</HealthCareCodeInfo>
+            </Procedures>
+            <MessageText SegId="MSG">
+                <FreeFormMessageTxt>null</FreeFormMessageTxt>
+            </MessageText>
+        </ServiceLevelLoop>
+    </ServiceProviderLevelLoop>
+    <TransactionSetTrailer SegId="SE">
+        <NumberOfIncSegs>7</NumberOfIncSegs>
+        <TSControlNumber>5516</TSControlNumber>
+    </TransactionSetTrailer>
+    <FunctionalGroupTrailer SegId="GE">
+        <NumberOfInclTS>8</NumberOfInclTS>
+        <GroupCtrlNumber>5516</GroupCtrlNumber>
+    </FunctionalGroupTrailer>
+    <InterchangeControlTrailer SegId="IEA">
+        <NumberOfInclGS>9</NumberOfInclGS>
+        <InterCtrlNumber>-126801799</InterCtrlNumber>
+    </InterchangeControlTrailer>
+</TransactionResponse>
+<?xml version="1.0"?>
+<!DOCTYPE TransactionResponse SYSTEM "/home/royals/qdx5.1/bpms/apps/conf/T278/x12-278b-Royal.dtd">
+<TransactionResponse>
+    <InterchangeControlHeader SegId="ISA">
+        <AuthorInfoQualifier>Text</AuthorInfoQualifier>
+        <AuthorInformation>Text</AuthorInformation>
+        <SecurityInfoQual>Text</SecurityInfoQual>
+        <SecurityInformation>Text</SecurityInformation>
+        <InterchangeIDQual>Text</InterchangeIDQual>
+        <InterchangeSenderID>ROYTUM</InterchangeSenderID>
+        <InterchangeIDQual>Text</InterchangeIDQual>
+        <InterchangeReceiverID>MCTM</InterchangeReceiverID>
+        <InterchangeDate>04/29/03</InterchangeDate>
+        <InterchangeTime>07:03</InterchangeTime>
+        <InterCtrlStandIdent>Text</InterCtrlStandIdent>
+        <InterCtrlVersionNum>Text</InterCtrlVersionNum>
+        <InterCtrlNumber>-126801799</InterCtrlNumber>
+        <AckRequested>Text</AckRequested>
+        <UsageIndicator>Text</UsageIndicator>
+        <ComponentElemSeparator>:</ComponentElemSeparator>
+    </InterchangeControlHeader>
+    <FunctionalGroupHeader SegId="GS">
+        <FunctionalIDCode>121</FunctionalIDCode>
+        <ApplicationSenderCode>Royal UMCM</ApplicationSenderCode>
+        <ApplicationReceiverCode>NHP</ApplicationReceiverCode>
+        <Date>04/29/03</Date>
+        <Time>07:03</Time>
+        <GroupCtrlNumber>34522</GroupCtrlNumber>
+        <ResponsibleAgencyCode>Text</ResponsibleAgencyCode>
+        <VerReleaseIDCode>UM 1.0 release 55</VerReleaseIDCode>
+    </FunctionalGroupHeader>
+    <TransactionSetHeader SegId="ST">
+        <TSIDCode>278</TSIDCode>
+        <TSControlNumber>5516</TSControlNumber>
+    </TransactionSetHeader>
+    <BeginningOfHierarchicalTransaction SegId="BHT">
+        <HierarchStructCode>0078</HierarchStructCode>
+        <TSPurposeCode>13</TSPurposeCode>
+        <ReferenceIdent>022130001</ReferenceIdent>
+        <Date>20030429</Date>
+        <Time>070347</Time>
+        <TransactionTypeCode>18</TransactionTypeCode>
+    </BeginningOfHierarchicalTransaction>
+    <UMOLevelLoop>
+        <UMOLevel SegId="HL">
+            <HierarchIDNumber>1</HierarchIDNumber>
+            <HierarchLevelCode>20</HierarchLevelCode>
+            <HierarchChildCode>1</HierarchChildCode>
+        </UMOLevel>
+        <UMONameLoop>
+            <UMOName SegId="NM1">
+                <EntityIDCode>X3</EntityIDCode>
+                <EntityTypeQualifier>2</EntityTypeQualifier>
+                <NameLastOrgName>Text</NameLastOrgName>
+                <NameFirst>Text</NameFirst>
+                <NameMiddle>Text</NameMiddle>
+                <NameSuffix>Text</NameSuffix>
+                <IDCodeQualifier>XV</IDCodeQualifier>
+                <IDCode>123456 TBD</IDCode>
+            </UMOName>
+            <UMOContactInformation SegId="PER">
+                <ContactFunctCode>IC</ContactFunctCode>
+                <Name>26</Name>
+            </UMOContactInformation>
+        </UMONameLoop>
+    </UMOLevelLoop>
+    <RequesterLevelLoop>
+        <RequesterLevel SegId="HL">
+            <HierarchIDNumber>2</HierarchIDNumber>
+            <HierarchParentID>0001</HierarchParentID>
+            <HierarchLevelCode>21</HierarchLevelCode>
+            <HierarchChildCode>1</HierarchChildCode>
+        </RequesterLevel>
+        <RequesterNameLoop>
+            <RequesterName SegId="NM1">
+                <EntityIDCode>1P</EntityIDCode>
+                <EntityTypeQualifier>2</EntityTypeQualifier>
+                <NameLastOrgName>null</NameLastOrgName>
+                <IDCodeQualifier>24</IDCodeQualifier>
+                <IDCode>26674101</IDCode>
+            </RequesterName>
+            <RequesterSupplementalIdentification SegId="REF">
+                <ReferenceIdentQual>ZH</ReferenceIdentQual>
+                <ReferenceIdent>26674101</ReferenceIdent>
+            </RequesterSupplementalIdentification>
+            <RequesterProviderInformation SegId="PRV">
+                <ProviderCode>RF</ProviderCode>
+                <ReferenceIdentQual>ZZ</ReferenceIdentQual>
+                <ReferenceIdent>15001</ReferenceIdent>
+            </RequesterProviderInformation>
+        </RequesterNameLoop>
+    </RequesterLevelLoop>
+    <SubscriberLevelLoop>
+        <SubscriberLevel SegId="HL">
+            <HierarchIDNumber>3</HierarchIDNumber>
+            <HierarchParentID>0001</HierarchParentID>
+            <HierarchLevelCode>22</HierarchLevelCode>
+            <HierarchChildCode>1</HierarchChildCode>
+        </SubscriberLevel>
+        <SubscriberDiagnosis SegId="HI">
+            <HealthCareCodeInfo>BF:25010</HealthCareCodeInfo>
+        </SubscriberDiagnosis>
+        <SubscriberNameLoop>
+            <SubscriberName SegId="NM1">
+                <EntityIDCode>IL</EntityIDCode>
+                <EntityTypeQualifier>1</EntityTypeQualifier>
+                <NameLastOrgName>TEST</NameLastOrgName>
+                <NameFirst>UAT</NameFirst>
+                <NameMiddle>null</NameMiddle>
+                <NameSuffix>Text</NameSuffix>
+                <IDCodeQualifier>MI</IDCodeQualifier>
+                <IDCode>77777962401</IDCode>
+            </SubscriberName>
+        </SubscriberNameLoop>
+    </SubscriberLevelLoop>
+    <ServiceProviderLevelLoop>
+        <ServiceProviderLevel SegId="HL">
+            <HierarchIDNumber>4</HierarchIDNumber>
+            <HierarchParentID>0001</HierarchParentID>
+            <HierarchLevelCode>19</HierarchLevelCode>
+            <HierarchChildCode>1</HierarchChildCode>
+        </ServiceProviderLevel>
+        <MessageText SegId="MSG">
+            <FreeFormMessageTxt></FreeFormMessageTxt>
+        </MessageText>
+        <ServiceProviderNameLoop>
+            <ServiceProviderName SegId="NM1">
+                <EntityIDCode>1T</EntityIDCode>
+                <EntityTypeQualifier>2</EntityTypeQualifier>
+                <NameLastOrgName>PRV</NameLastOrgName>
+                <NameFirst>NONPAR</NameFirst>
+                <NameMiddle>null</NameMiddle>
+            </ServiceProviderName>
+            <ServiceProviderSupplementalIdentification SegId="REF">
+                <ReferenceIdentQual>ZH</ReferenceIdentQual>
+                <ReferenceIdent>777</ReferenceIdent>
+            </ServiceProviderSupplementalIdentification>
+            <ServiceProviderInformation SegId="PRV">
+                <ProviderCode>CO</ProviderCode>
+                <ReferenceIdentQual>ZZ</ReferenceIdentQual>
+                <ReferenceIdent>null</ReferenceIdent>
+            </ServiceProviderInformation>
+        </ServiceProviderNameLoop>
+        <ServiceLevelLoop>
+            <ServiceLevel SegId="HL">
+                <HierarchIDNumber>6</HierarchIDNumber>
+                <HierarchParentID>4</HierarchParentID>
+                <HierarchLevelCode>SS</HierarchLevelCode>
+                <HierarchChildCode>0</HierarchChildCode>
+            </ServiceLevel>
+            <ServiceTraceNumber SegId="TRN">
+                <TraceTypeCode>1</TraceTypeCode>
+                <ReferenceIdent>122906</ReferenceIdent>
+                <OriginatingCompanyID>RoyalUM</OriginatingCompanyID>
+            </ServiceTraceNumber>
+            <HealthCareServicesReviewInformation SegId="UM">
+                <RequestCategoryCode>HS</RequestCategoryCode>
+                <CertificateTypeCode>5</CertificateTypeCode>
+            </HealthCareServicesReviewInformation>
+        </ServiceLevelLoop>
+    </ServiceProviderLevelLoop>
+    <ServiceProviderLevelLoop>
+        <ServiceProviderLevel SegId="HL">
+            <HierarchIDNumber>4</HierarchIDNumber>
+            <HierarchParentID>0002</HierarchParentID>
+            <HierarchLevelCode>19</HierarchLevelCode>
+            <HierarchChildCode>1</HierarchChildCode>
+        </ServiceProviderLevel>
+        <MessageText SegId="MSG">
+            <FreeFormMessageTxt></FreeFormMessageTxt>
+        </MessageText>
+        <ServiceProviderNameLoop>
+            <ServiceProviderName SegId="NM1">
+                <EntityIDCode>1T</EntityIDCode>
+                <EntityTypeQualifier>2</EntityTypeQualifier>
+                <NameLastOrgName>PRV</NameLastOrgName>
+                <NameFirst>NONPAR</NameFirst>
+                <NameMiddle>null</NameMiddle>
+            </ServiceProviderName>
+            <ServiceProviderSupplementalIdentification SegId="REF">
+                <ReferenceIdentQual>ZH</ReferenceIdentQual>
+                <ReferenceIdent>777</ReferenceIdent>
+            </ServiceProviderSupplementalIdentification>
+            <ServiceProviderInformation SegId="PRV">
+                <ProviderCode>CO</ProviderCode>
+                <ReferenceIdentQual>ZZ</ReferenceIdentQual>
+                <ReferenceIdent>null</ReferenceIdent>
+            </ServiceProviderInformation>
+        </ServiceProviderNameLoop>
+        <ServiceLevelLoop>
+            <ServiceLevel SegId="HL">
+                <HierarchIDNumber>6</HierarchIDNumber>
+                <HierarchParentID>4</HierarchParentID>
+                <HierarchLevelCode>SS</HierarchLevelCode>
+                <HierarchChildCode>0</HierarchChildCode>
+            </ServiceLevel>
+            <ServiceTraceNumber SegId="TRN">
+                <TraceTypeCode>1</TraceTypeCode>
+                <ReferenceIdent>122906</ReferenceIdent>
+                <OriginatingCompanyID>RoyalUM</OriginatingCompanyID>
+            </ServiceTraceNumber>
+            <HealthCareServicesReviewInformation SegId="UM">
+                <RequestCategoryCode>HS</RequestCategoryCode>
+                <CertificateTypeCode>5</CertificateTypeCode>
+                <ServiceTypeCode>54</ServiceTypeCode>
+                <HealthCareServLoc>70:B</HealthCareServLoc>
+                <LevelOfServCode>03</LevelOfServCode>
+            </HealthCareServicesReviewInformation>
+            <HealthCareServicesReview>
+                <ActionCode>A1</ActionCode>
+                <ReferenceIdent>002700</ReferenceIdent>
+                <RejectReasonCode>2</RejectReasonCode>
+                <YesNoCondRespCode>Y</YesNoCondRespCode>
+            </HealthCareServicesReview>
+            <ServiceDate SegId="DTP">
+                <DateTimeQualifier>472</DateTimeQualifier>
+                <DateTimeFormatQual>RD8</DateTimeFormatQual>
+                <DateTimePeriod>20030502-20030502</DateTimePeriod>
+            </ServiceDate>
+            <CertificationIssueDate SegId="DTP">
+                <DateTimeQualifier>102</DateTimeQualifier>
+                <DateTimeFormatQual>D8</DateTimeFormatQual>
+                <DateTimePeriod>20030429</DateTimePeriod>
+            </CertificationIssueDate>
+            <Procedures SegId="HI">
+                <HealthCareCodeInfo>BO:99212:RD8:20030502-20030502::1</HealthCareCodeInfo>
+            </Procedures>
+            <MessageText SegId="MSG">
+                <FreeFormMessageTxt>null</FreeFormMessageTxt>
+            </MessageText>
+        </ServiceLevelLoop>
+    </ServiceProviderLevelLoop>
+    <TransactionSetTrailer SegId="SE">
+        <NumberOfIncSegs>7</NumberOfIncSegs>
+        <TSControlNumber>5516</TSControlNumber>
+    </TransactionSetTrailer>
+    <FunctionalGroupTrailer SegId="GE">
+        <NumberOfInclTS>8</NumberOfInclTS>
+        <GroupCtrlNumber>5516</GroupCtrlNumber>
+    </FunctionalGroupTrailer>
+    <InterchangeControlTrailer SegId="IEA">
+        <NumberOfInclGS>9</NumberOfInclGS>
+        <InterCtrlNumber>-126801799</InterCtrlNumber>
+    </InterchangeControlTrailer>
+</TransactionResponse>
+<?xml version="1.0"?>
+<!DOCTYPE TransactionResponse SYSTEM "/home/royals/qdx5.1/bpms/apps/conf/T278/x12-278b-Royal.dtd">
+<TransactionResponse>
+    <InterchangeControlHeader SegId="ISA">
+        <AuthorInfoQualifier>Text</AuthorInfoQualifier>
+        <AuthorInformation>Text</AuthorInformation>
+        <SecurityInfoQual>Text</SecurityInfoQual>
+        <SecurityInformation>Text</SecurityInformation>
+        <InterchangeIDQual>Text</InterchangeIDQual>
+        <InterchangeSenderID>ROYTUM</InterchangeSenderID>
+        <InterchangeIDQual>Text</InterchangeIDQual>
+        <InterchangeReceiverID>MCTM</InterchangeReceiverID>
+        <InterchangeDate>04/29/03</InterchangeDate>
+        <InterchangeTime>07:03</InterchangeTime>
+        <InterCtrlStandIdent>Text</InterCtrlStandIdent>
+        <InterCtrlVersionNum>Text</InterCtrlVersionNum>
+        <InterCtrlNumber>-126801799</InterCtrlNumber>
+        <AckRequested>Text</AckRequested>
+        <UsageIndicator>Text</UsageIndicator>
+        <ComponentElemSeparator>:</ComponentElemSeparator>
+    </InterchangeControlHeader>
+    <FunctionalGroupHeader SegId="GS">
+        <FunctionalIDCode>121</FunctionalIDCode>
+        <ApplicationSenderCode>Royal UMCM</ApplicationSenderCode>
+        <ApplicationReceiverCode>NHP</ApplicationReceiverCode>
+        <Date>04/29/03</Date>
+        <Time>07:03</Time>
+        <GroupCtrlNumber>34522</GroupCtrlNumber>
+        <ResponsibleAgencyCode>Text</ResponsibleAgencyCode>
+        <VerReleaseIDCode>UM 1.0 release 55</VerReleaseIDCode>
+    </FunctionalGroupHeader>
+    <TransactionSetHeader SegId="ST">
+        <TSIDCode>278</TSIDCode>
+        <TSControlNumber>5516</TSControlNumber>
+    </TransactionSetHeader>
+    <BeginningOfHierarchicalTransaction SegId="BHT">
+        <HierarchStructCode>0078</HierarchStructCode>
+        <TSPurposeCode>13</TSPurposeCode>
+        <ReferenceIdent>022130001</ReferenceIdent>
+        <Date>20030429</Date>
+        <Time>070347</Time>
+        <TransactionTypeCode>18</TransactionTypeCode>
+    </BeginningOfHierarchicalTransaction>
+    <UMOLevelLoop>
+        <UMOLevel SegId="HL">
+            <HierarchIDNumber>1</HierarchIDNumber>
+            <HierarchLevelCode>20</HierarchLevelCode>
+            <HierarchChildCode>1</HierarchChildCode>
+        </UMOLevel>
+        <UMONameLoop>
+            <UMOName SegId="NM1">
+                <EntityIDCode>X3</EntityIDCode>
+                <EntityTypeQualifier>2</EntityTypeQualifier>
+                <NameLastOrgName>Text</NameLastOrgName>
+                <NameFirst>Text</NameFirst>
+                <NameMiddle>Text</NameMiddle>
+                <NameSuffix>Text</NameSuffix>
+                <IDCodeQualifier>XV</IDCodeQualifier>
+                <IDCode>123456 TBD</IDCode>
+            </UMOName>
+            <UMOContactInformation SegId="PER">
+                <ContactFunctCode>IC</ContactFunctCode>
+                <Name>26</Name>
+            </UMOContactInformation>
+        </UMONameLoop>
+    </UMOLevelLoop>
+    <RequesterLevelLoop>
+        <RequesterLevel SegId="HL">
+            <HierarchIDNumber>2</HierarchIDNumber>
+            <HierarchParentID>0001</HierarchParentID>
+            <HierarchLevelCode>21</HierarchLevelCode>
+            <HierarchChildCode>1</HierarchChildCode>
+        </RequesterLevel>
+        <RequesterNameLoop>
+            <RequesterName SegId="NM1">
+                <EntityIDCode>1P</EntityIDCode>
+                <EntityTypeQualifier>2</EntityTypeQualifier>
+                <NameLastOrgName>null</NameLastOrgName>
+                <IDCodeQualifier>24</IDCodeQualifier>
+                <IDCode>26674101</IDCode>
+            </RequesterName>
+            <RequesterSupplementalIdentification SegId="REF">
+                <ReferenceIdentQual>ZH</ReferenceIdentQual>
+                <ReferenceIdent>26674101</ReferenceIdent>
+            </RequesterSupplementalIdentification>
+            <RequesterProviderInformation SegId="PRV">
+                <ProviderCode>RF</ProviderCode>
+                <ReferenceIdentQual>ZZ</ReferenceIdentQual>
+                <ReferenceIdent>15001</ReferenceIdent>
+            </RequesterProviderInformation>
+        </RequesterNameLoop>
+    </RequesterLevelLoop>
+    <SubscriberLevelLoop>
+        <SubscriberLevel SegId="HL">
+            <HierarchIDNumber>3</HierarchIDNumber>
+            <HierarchParentID>0001</HierarchParentID>
+            <HierarchLevelCode>22</HierarchLevelCode>
+            <HierarchChildCode>1</HierarchChildCode>
+        </SubscriberLevel>
+        <SubscriberDiagnosis SegId="HI">
+            <HealthCareCodeInfo>BF:25010</HealthCareCodeInfo>
+        </SubscriberDiagnosis>
+        <SubscriberNameLoop>
+            <SubscriberName SegId="NM1">
+                <EntityIDCode>IL</EntityIDCode>
+                <EntityTypeQualifier>1</EntityTypeQualifier>
+                <NameLastOrgName>TEST</NameLastOrgName>
+                <NameFirst>UAT</NameFirst>
+                <NameMiddle>null</NameMiddle>
+                <NameSuffix>Text</NameSuffix>
+                <IDCodeQualifier>MI</IDCodeQualifier>
+            </SubscriberName>
+        </SubscriberNameLoop>
+    </SubscriberLevelLoop>
+    <ServiceProviderLevelLoop>
+        <ServiceProviderLevel SegId="HL">
+            <HierarchIDNumber>4</HierarchIDNumber>
+            <HierarchParentID>0001</HierarchParentID>
+            <HierarchLevelCode>19</HierarchLevelCode>
+            <HierarchChildCode>1</HierarchChildCode>
+        </ServiceProviderLevel>
+        <MessageText SegId="MSG">
+            <FreeFormMessageTxt></FreeFormMessageTxt>
+        </MessageText>
+        <ServiceProviderNameLoop>
+            <ServiceProviderName SegId="NM1">
+                <EntityIDCode>1T</EntityIDCode>
+                <EntityTypeQualifier>2</EntityTypeQualifier>
+                <NameLastOrgName>PRV</NameLastOrgName>
+                <NameFirst>NONPAR</NameFirst>
+                <NameMiddle>null</NameMiddle>
+            </ServiceProviderName>
+            <ServiceProviderSupplementalIdentification SegId="REF">
+                <ReferenceIdentQual>ZH</ReferenceIdentQual>
+                <ReferenceIdent>777</ReferenceIdent>
+            </ServiceProviderSupplementalIdentification>
+            <ServiceProviderInformation SegId="PRV">
+                <ProviderCode>CO</ProviderCode>
+                <ReferenceIdentQual>ZZ</ReferenceIdentQual>
+                <ReferenceIdent>null</ReferenceIdent>
+            </ServiceProviderInformation>
+        </ServiceProviderNameLoop>
+        <ServiceLevelLoop>
+            <ServiceLevel SegId="HL">
+                <HierarchIDNumber>6</HierarchIDNumber>
+                <HierarchParentID>4</HierarchParentID>
+                <HierarchLevelCode>SS</HierarchLevelCode>
+                <HierarchChildCode>0</HierarchChildCode>
+            </ServiceLevel>
+            <ServiceTraceNumber SegId="TRN">
+                <TraceTypeCode>1</TraceTypeCode>
+                <ReferenceIdent>122906</ReferenceIdent>
+                <OriginatingCompanyID>RoyalUM</OriginatingCompanyID>
+            </ServiceTraceNumber>
+            <HealthCareServicesReviewInformation SegId="UM">
+                <RequestCategoryCode>HS</RequestCategoryCode>
+                <CertificateTypeCode>5</CertificateTypeCode>
+            </HealthCareServicesReviewInformation>
+        </ServiceLevelLoop>
+    </ServiceProviderLevelLoop>
+    <ServiceProviderLevelLoop>
+        <ServiceProviderLevel SegId="HL">
+            <HierarchIDNumber>4</HierarchIDNumber>
+            <HierarchParentID>0002</HierarchParentID>
+            <HierarchLevelCode>19</HierarchLevelCode>
+            <HierarchChildCode>1</HierarchChildCode>
+        </ServiceProviderLevel>
+        <MessageText SegId="MSG">
+            <FreeFormMessageTxt></FreeFormMessageTxt>
+        </MessageText>
+        <ServiceProviderNameLoop>
+            <ServiceProviderName SegId="NM1">
+                <EntityIDCode>1T</EntityIDCode>
+                <EntityTypeQualifier>2</EntityTypeQualifier>
+                <NameLastOrgName>PRV</NameLastOrgName>
+                <NameFirst>NONPAR</NameFirst>
+                <NameMiddle>null</NameMiddle>
+            </ServiceProviderName>
+            <ServiceProviderSupplementalIdentification SegId="REF">
+                <ReferenceIdentQual>ZH</ReferenceIdentQual>
+                <ReferenceIdent>777</ReferenceIdent>
+            </ServiceProviderSupplementalIdentification>
+            <ServiceProviderInformation SegId="PRV">
+                <ProviderCode>CO</ProviderCode>
+                <ReferenceIdentQual>ZZ</ReferenceIdentQual>
+                <ReferenceIdent>null</ReferenceIdent>
+            </ServiceProviderInformation>
+        </ServiceProviderNameLoop>
+        <ServiceLevelLoop>
+            <ServiceLevel SegId="HL">
+                <HierarchIDNumber>6</HierarchIDNumber>
+                <HierarchParentID>4</HierarchParentID>
+                <HierarchLevelCode>SS</HierarchLevelCode>
+                <HierarchChildCode>0</HierarchChildCode>
+            </ServiceLevel>
+            <ServiceTraceNumber SegId="TRN">
+                <TraceTypeCode>1</TraceTypeCode>
+                <ReferenceIdent>122906</ReferenceIdent>
+                <OriginatingCompanyID>RoyalUM</OriginatingCompanyID>
+            </ServiceTraceNumber>
+            <HealthCareServicesReviewInformation SegId="UM">
+                <RequestCategoryCode>HS</RequestCategoryCode>
+                <CertificateTypeCode>5</CertificateTypeCode>
+                <ServiceTypeCode>54</ServiceTypeCode>
+                <HealthCareServLoc>70:B</HealthCareServLoc>
+                <LevelOfServCode>03</LevelOfServCode>
+            </HealthCareServicesReviewInformation>
+            <HealthCareServicesReview>
+                <ActionCode>A1</ActionCode>
+                <ReferenceIdent>002700</ReferenceIdent>
+                <RejectReasonCode>2</RejectReasonCode>
+                <YesNoCondRespCode>Y</YesNoCondRespCode>
+            </HealthCareServicesReview>
+            <ServiceDate SegId="DTP">
+                <DateTimeQualifier>472</DateTimeQualifier>
+                <DateTimeFormatQual>RD8</DateTimeFormatQual>
+                <DateTimePeriod>20030502-20030502</DateTimePeriod>
+            </ServiceDate>
+            <CertificationIssueDate SegId="DTP">
+                <DateTimeQualifier>102</DateTimeQualifier>
+                <DateTimeFormatQual>D8</DateTimeFormatQual>
+                <DateTimePeriod>20030429</DateTimePeriod>
+            </CertificationIssueDate>
+            <Procedures SegId="HI">
+                <HealthCareCodeInfo>BO:99212:RD8:20030502-20030502::1</HealthCareCodeInfo>
+            </Procedures>
+            <MessageText SegId="MSG">
+                <FreeFormMessageTxt>null</FreeFormMessageTxt>
+            </MessageText>
+        </ServiceLevelLoop>
+    </ServiceProviderLevelLoop>
+    <TransactionSetTrailer SegId="SE">
+        <NumberOfIncSegs>7</NumberOfIncSegs>
+        <TSControlNumber>5516</TSControlNumber>
+    </TransactionSetTrailer>
+    <FunctionalGroupTrailer SegId="GE">
+        <NumberOfInclTS>8</NumberOfInclTS>
+        <GroupCtrlNumber>5516</GroupCtrlNumber>
+    </FunctionalGroupTrailer>
+    <InterchangeControlTrailer SegId="IEA">
+        <NumberOfInclGS>9</NumberOfInclGS>
+        <InterCtrlNumber>-126801799</InterCtrlNumber>
+    </InterchangeControlTrailer>
+</TransactionResponse>
+<?xml version="1.0"?>
+<!DOCTYPE TransactionResponse SYSTEM "/home/royals/qdx5.1/bpms/apps/conf/T278/x12-278b-Royal.dtd">
+<TransactionResponse>
+    <InterchangeControlHeader SegId="ISA">
+        <AuthorInfoQualifier>Text</AuthorInfoQualifier>
+        <AuthorInformation>Text</AuthorInformation>
+        <SecurityInfoQual>Text</SecurityInfoQual>
+        <SecurityInformation>Text</SecurityInformation>
+        <InterchangeIDQual>Text</InterchangeIDQual>
+        <InterchangeSenderID>ROYTUM</InterchangeSenderID>
+        <InterchangeIDQual>Text</InterchangeIDQual>
+        <InterchangeReceiverID>MCTM</InterchangeReceiverID>
+        <InterchangeDate>04/29/03</InterchangeDate>
+        <InterchangeTime>07:03</InterchangeTime>
+        <InterCtrlStandIdent>Text</InterCtrlStandIdent>
+        <InterCtrlVersionNum>Text</InterCtrlVersionNum>
+        <InterCtrlNumber>-126801799</InterCtrlNumber>
+        <AckRequested>Text</AckRequested>
+        <UsageIndicator>Text</UsageIndicator>
+        <ComponentElemSeparator>:</ComponentElemSeparator>
+    </InterchangeControlHeader>
+    <FunctionalGroupHeader SegId="GS">
+        <FunctionalIDCode>121</FunctionalIDCode>
+        <ApplicationSenderCode>Royal UMCM</ApplicationSenderCode>
+        <ApplicationReceiverCode>NHP</ApplicationReceiverCode>
+        <Date>04/29/03</Date>
+        <Time>07:03</Time>
+        <GroupCtrlNumber>34522</GroupCtrlNumber>
+        <ResponsibleAgencyCode>Text</ResponsibleAgencyCode>
+        <VerReleaseIDCode>UM 1.0 release 55</VerReleaseIDCode>
+    </FunctionalGroupHeader>
+    <TransactionSetHeader SegId="ST">
+        <TSIDCode>278</TSIDCode>
+        <TSControlNumber>5516</TSControlNumber>
+    </TransactionSetHeader>
+    <BeginningOfHierarchicalTransaction SegId="BHT">
+        <HierarchStructCode>0078</HierarchStructCode>
+        <TSPurposeCode>13</TSPurposeCode>
+        <ReferenceIdent>022130001</ReferenceIdent>
+        <Date>20030429</Date>
+        <Time>070347</Time>
+        <TransactionTypeCode>18</TransactionTypeCode>
+    </BeginningOfHierarchicalTransaction>
+    <UMOLevelLoop>
+        <UMOLevel SegId="HL">
+            <HierarchIDNumber>1</HierarchIDNumber>
+            <HierarchLevelCode>20</HierarchLevelCode>
+            <HierarchChildCode>1</HierarchChildCode>
+        </UMOLevel>
+        <UMONameLoop>
+            <UMOName SegId="NM1">
+                <EntityIDCode>X3</EntityIDCode>
+                <EntityTypeQualifier>2</EntityTypeQualifier>
+                <NameLastOrgName>Text</NameLastOrgName>
+                <NameFirst>Text</NameFirst>
+                <NameMiddle>Text</NameMiddle>
+                <NameSuffix>Text</NameSuffix>
+                <IDCodeQualifier>XV</IDCodeQualifier>
+                <IDCode>123456 TBD</IDCode>
+            </UMOName>
+            <UMOContactInformation SegId="PER">
+                <ContactFunctCode>IC</ContactFunctCode>
+                <Name>26</Name>
+            </UMOContactInformation>
+        </UMONameLoop>
+    </UMOLevelLoop>
+    <RequesterLevelLoop>
+        <RequesterLevel SegId="HL">
+            <HierarchIDNumber>2</HierarchIDNumber>
+            <HierarchParentID>0001</HierarchParentID>
+            <HierarchLevelCode>21</HierarchLevelCode>
+            <HierarchChildCode>1</HierarchChildCode>
+        </RequesterLevel>
+        <RequesterNameLoop>
+            <RequesterName SegId="NM1">
+                <EntityIDCode>1P</EntityIDCode>
+                <EntityTypeQualifier>2</EntityTypeQualifier>
+                <NameLastOrgName>null</NameLastOrgName>
+                <IDCodeQualifier>24</IDCodeQualifier>
+                <IDCode>26674101</IDCode>
+            </RequesterName>
+            <RequesterSupplementalIdentification SegId="REF">
+                <ReferenceIdentQual>ZH</ReferenceIdentQual>
+                <ReferenceIdent>26674101</ReferenceIdent>
+            </RequesterSupplementalIdentification>
+            <RequesterProviderInformation SegId="PRV">
+                <ProviderCode>RF</ProviderCode>
+                <ReferenceIdentQual>ZZ</ReferenceIdentQual>
+                <ReferenceIdent>15001</ReferenceIdent>
+            </RequesterProviderInformation>
+        </RequesterNameLoop>
+    </RequesterLevelLoop>
+    <SubscriberLevelLoop>
+        <SubscriberLevel SegId="HL">
+            <HierarchIDNumber>3</HierarchIDNumber>
+            <HierarchParentID>0001</HierarchParentID>
+            <HierarchLevelCode>22</HierarchLevelCode>
+            <HierarchChildCode>1</HierarchChildCode>
+        </SubscriberLevel>
+        <SubscriberDiagnosis SegId="HI">
+            <HealthCareCodeInfo>BF:25010</HealthCareCodeInfo>
+        </SubscriberDiagnosis>
+        <SubscriberNameLoop>
+            <SubscriberName SegId="NM1">
+                <EntityIDCode>IL</EntityIDCode>
+                <EntityTypeQualifier>1</EntityTypeQualifier>
+                <NameLastOrgName>TEST</NameLastOrgName>
+                <NameFirst>UAT</NameFirst>
+                <NameMiddle>null</NameMiddle>
+                <NameSuffix>Text</NameSuffix>
+                <IDCodeQualifier>MI</IDCodeQualifier>
+                <IDCode>77777962401</IDCode>
+            </SubscriberName>
+        </SubscriberNameLoop>
+    </SubscriberLevelLoop>
+    <ServiceProviderLevelLoop>
+        <ServiceProviderLevel SegId="HL">
+            <HierarchIDNumber>4</HierarchIDNumber>
+            <HierarchParentID>0001</HierarchParentID>
+            <HierarchLevelCode>19</HierarchLevelCode>
+            <HierarchChildCode>1</HierarchChildCode>
+        </ServiceProviderLevel>
+        <MessageText SegId="MSG">
+            <FreeFormMessageTxt></FreeFormMessageTxt>
+        </MessageText>
+        <ServiceProviderNameLoop>
+            <ServiceProviderName SegId="NM1">
+                <EntityIDCode>1T</EntityIDCode>
+                <EntityTypeQualifier>2</EntityTypeQualifier>
+                <NameLastOrgName>PRV</NameLastOrgName>
+                <NameFirst>NONPAR</NameFirst>
+                <NameMiddle>null</NameMiddle>
+            </ServiceProviderName>
+            <ServiceProviderSupplementalIdentification SegId="REF">
+                <ReferenceIdentQual>ZH</ReferenceIdentQual>
+                <ReferenceIdent>777</ReferenceIdent>
+            </ServiceProviderSupplementalIdentification>
+            <ServiceProviderInformation SegId="PRV">
+                <ProviderCode>CO</ProviderCode>
+                <ReferenceIdentQual>ZZ</ReferenceIdentQual>
+                <ReferenceIdent>null</ReferenceIdent>
+            </ServiceProviderInformation>
+        </ServiceProviderNameLoop>
+        <ServiceLevelLoop>
+            <ServiceLevel SegId="HL">
+                <HierarchIDNumber>6</HierarchIDNumber>
+                <HierarchParentID>4</HierarchParentID>
+                <HierarchLevelCode>SS</HierarchLevelCode>
+                <HierarchChildCode>0</HierarchChildCode>
+            </ServiceLevel>
+            <ServiceTraceNumber SegId="TRN">
+                <TraceTypeCode>1</TraceTypeCode>
+                <ReferenceIdent>122906</ReferenceIdent>
+                <OriginatingCompanyID>RoyalUM</OriginatingCompanyID>
+            </ServiceTraceNumber>
+            <HealthCareServicesReviewInformation SegId="UM">
+                <RequestCategoryCode>HS</RequestCategoryCode>
+                <CertificateTypeCode>5</CertificateTypeCode>
+            </HealthCareServicesReviewInformation>
+        </ServiceLevelLoop>
+    </ServiceProviderLevelLoop>
+    <ServiceProviderLevelLoop>
+        <ServiceProviderLevel SegId="HL">
+            <HierarchIDNumber>4</HierarchIDNumber>
+            <HierarchParentID>0002</HierarchParentID>
+            <HierarchLevelCode>19</HierarchLevelCode>
+            <HierarchChildCode>1</HierarchChildCode>
+        </ServiceProviderLevel>
+        <MessageText SegId="MSG">
+            <FreeFormMessageTxt></FreeFormMessageTxt>
+        </MessageText>
+        <ServiceProviderNameLoop>
+            <ServiceProviderName SegId="NM1">
+                <EntityIDCode>1T</EntityIDCode>
+                <EntityTypeQualifier>2</EntityTypeQualifier>
+                <NameLastOrgName>PRV</NameLastOrgName>
+                <NameFirst>NONPAR</NameFirst>
+                <NameMiddle>null</NameMiddle>
+            </ServiceProviderName>
+            <ServiceProviderSupplementalIdentification SegId="REF">
+                <ReferenceIdentQual>ZH</ReferenceIdentQual>
+                <ReferenceIdent>777</ReferenceIdent>
+            </ServiceProviderSupplementalIdentification>
+            <ServiceProviderInformation SegId="PRV">
+                <ProviderCode>CO</ProviderCode>
+                <ReferenceIdentQual>ZZ</ReferenceIdentQual>
+                <ReferenceIdent>null</ReferenceIdent>
+            </ServiceProviderInformation>
+        </ServiceProviderNameLoop>
+        <ServiceLevelLoop>
+            <ServiceLevel SegId="HL">
+                <HierarchIDNumber>6</HierarchIDNumber>
+                <HierarchParentID>4</HierarchParentID>
+                <HierarchLevelCode>SS</HierarchLevelCode>
+                <HierarchChildCode>0</HierarchChildCode>
+            </ServiceLevel>
+            <ServiceTraceNumber SegId="TRN">
+                <TraceTypeCode>1</TraceTypeCode>
+                <ReferenceIdent>122906</ReferenceIdent>
+                <OriginatingCompanyID>RoyalUM</OriginatingCompanyID>
+            </ServiceTraceNumber>
+            <HealthCareServicesReviewInformation SegId="UM">
+                <RequestCategoryCode>HS</RequestCategoryCode>
+                <CertificateTypeCode>5</CertificateTypeCode>
+                <ServiceTypeCode>54</ServiceTypeCode>
+                <HealthCareServLoc>70:B</HealthCareServLoc>
+                <LevelOfServCode>03</LevelOfServCode>
+            </HealthCareServicesReviewInformation>
+            <HealthCareServicesReview>
+                <ActionCode>A1</ActionCode>
+                <ReferenceIdent>002700</ReferenceIdent>
+                <RejectReasonCode>2</RejectReasonCode>
+                <YesNoCondRespCode>Y</YesNoCondRespCode>
+            </HealthCareServicesReview>
+            <ServiceDate SegId="DTP">
+                <DateTimeQualifier>472</DateTimeQualifier>
+                <DateTimeFormatQual>RD8</DateTimeFormatQual>
+                <DateTimePeriod>20030502-20030502</DateTimePeriod>
+            </ServiceDate>
+            <CertificationIssueDate SegId="DTP">
+                <DateTimeQualifier>102</DateTimeQualifier>
+                <DateTimeFormatQual>D8</DateTimeFormatQual>
+                <DateTimePeriod>20030429</DateTimePeriod>
+            </CertificationIssueDate>
+            <Procedures SegId="HI">
+                <HealthCareCodeInfo>BO:99212:RD8:20030502-20030502::1</HealthCareCodeInfo>
+            </Procedures>
+            <MessageText SegId="MSG">
+                <FreeFormMessageTxt>null</FreeFormMessageTxt>
+            </MessageText>
+        </ServiceLevelLoop>
+    </ServiceProviderLevelLoop>
+    <TransactionSetTrailer SegId="SE">
+        <NumberOfIncSegs>7</NumberOfIncSegs>
+        <TSControlNumber>5516</TSControlNumber>
+    </TransactionSetTrailer>
+    <FunctionalGroupTrailer SegId="GE">
+        <NumberOfInclTS>8</NumberOfInclTS>
+        <GroupCtrlNumber>5516</GroupCtrlNumber>
+    </FunctionalGroupTrailer>
+    <InterchangeControlTrailer SegId="IEA">
+        <NumberOfInclGS>9</NumberOfInclGS>
+        <InterCtrlNumber>-126801799</InterCtrlNumber>
+    </InterchangeControlTrailer>
+</TransactionResponse>
+<?xml version="1.0"?>
+<!DOCTYPE TransactionResponse SYSTEM "/home/royals/qdx5.1/bpms/apps/conf/T278/x12-278b-Royal.dtd">
+<TransactionResponse>
+    <InterchangeControlHeader SegId="ISA">
+        <AuthorInfoQualifier>Text</AuthorInfoQualifier>
+        <AuthorInformation>Text</AuthorInformation>
+        <SecurityInfoQual>Text</SecurityInfoQual>
+        <SecurityInformation>Text</SecurityInformation>
+        <InterchangeIDQual>Text</InterchangeIDQual>
+        <InterchangeSenderID>ROYTUM</InterchangeSenderID>
+        <InterchangeIDQual>Text</InterchangeIDQual>
+        <InterchangeReceiverID>MCTM</InterchangeReceiverID>
+        <InterchangeDate>04/29/03</InterchangeDate>
+        <InterchangeTime>07:03</InterchangeTime>
+        <InterCtrlStandIdent>Text</InterCtrlStandIdent>
+        <InterCtrlVersionNum>Text</InterCtrlVersionNum>
+        <InterCtrlNumber>-126801799</InterCtrlNumber>
+        <AckRequested>Text</AckRequested>
+        <UsageIndicator>Text</UsageIndicator>
+        <ComponentElemSeparator>:</ComponentElemSeparator>
+    </InterchangeControlHeader>
+    <FunctionalGroupHeader SegId="GS">
+        <FunctionalIDCode>121</FunctionalIDCode>
+        <ApplicationSenderCode>Royal UMCM</ApplicationSenderCode>
+        <ApplicationReceiverCode>NHP</ApplicationReceiverCode>
+        <Date>04/29/03</Date>
+        <Time>07:03</Time>
+        <GroupCtrlNumber>34522</GroupCtrlNumber>
+        <ResponsibleAgencyCode>Text</ResponsibleAgencyCode>
+        <VerReleaseIDCode>UM 1.0 release 55</VerReleaseIDCode>
+    </FunctionalGroupHeader>
+    <TransactionSetHeader SegId="ST">
+        <TSIDCode>278</TSIDCode>
+        <TSControlNumber>5516</TSControlNumber>
+    </TransactionSetHeader>
+    <BeginningOfHierarchicalTransaction SegId="BHT">
+        <HierarchStructCode>0078</HierarchStructCode>
+        <TSPurposeCode>13</TSPurposeCode>
+        <ReferenceIdent>022130001</ReferenceIdent>
+        <Date>20030429</Date>
+        <Time>070347</Time>
+        <TransactionTypeCode>18</TransactionTypeCode>
+    </BeginningOfHierarchicalTransaction>
+    <UMOLevelLoop>
+        <UMOLevel SegId="HL">
+            <HierarchIDNumber>1</HierarchIDNumber>
+            <HierarchLevelCode>20</HierarchLevelCode>
+            <HierarchChildCode>1</HierarchChildCode>
+        </UMOLevel>
+        <UMONameLoop>
+            <UMOName SegId="NM1">
+                <EntityIDCode>X3</EntityIDCode>
+                <EntityTypeQualifier>2</EntityTypeQualifier>
+                <NameLastOrgName>Text</NameLastOrgName>
+                <NameFirst>Text</NameFirst>
+                <NameMiddle>Text</NameMiddle>
+                <NameSuffix>Text</NameSuffix>
+                <IDCodeQualifier>XV</IDCodeQualifier>
+                <IDCode>123456 TBD</IDCode>
+            </UMOName>
+            <UMOContactInformation SegId="PER">
+                <ContactFunctCode>IC</ContactFunctCode>
+                <Name>26</Name>
+            </UMOContactInformation>
+        </UMONameLoop>
+    </UMOLevelLoop>
+    <RequesterLevelLoop>
+        <RequesterLevel SegId="HL">
+            <HierarchIDNumber>2</HierarchIDNumber>
+            <HierarchParentID>0001</HierarchParentID>
+            <HierarchLevelCode>21</HierarchLevelCode>
+            <HierarchChildCode>1</HierarchChildCode>
+        </RequesterLevel>
+        <RequesterNameLoop>
+            <RequesterName SegId="NM1">
+                <EntityIDCode>1P</EntityIDCode>
+                <EntityTypeQualifier>2</EntityTypeQualifier>
+                <NameLastOrgName>null</NameLastOrgName>
+                <IDCodeQualifier>24</IDCodeQualifier>
+                <IDCode>26674101</IDCode>
+            </RequesterName>
+            <RequesterSupplementalIdentification SegId="REF">
+                <ReferenceIdentQual>ZH</ReferenceIdentQual>
+                <ReferenceIdent>26674101</ReferenceIdent>
+            </RequesterSupplementalIdentification>
+            <RequesterProviderInformation SegId="PRV">
+                <ProviderCode>RF</ProviderCode>
+                <ReferenceIdentQual>ZZ</ReferenceIdentQual>
+                <ReferenceIdent>15001</ReferenceIdent>
+            </RequesterProviderInformation>
+        </RequesterNameLoop>
+    </RequesterLevelLoop>
+    <SubscriberLevelLoop>
+        <SubscriberLevel SegId="HL">
+            <HierarchIDNumber>3</HierarchIDNumber>
+            <HierarchParentID>0001</HierarchParentID>
+            <HierarchLevelCode>22</HierarchLevelCode>
+            <HierarchChildCode>1</HierarchChildCode>
+        </SubscriberLevel>
+        <SubscriberDiagnosis SegId="HI">
+            <HealthCareCodeInfo>BF:25010</HealthCareCodeInfo>
+        </SubscriberDiagnosis>
+        <SubscriberNameLoop>
+            <SubscriberName SegId="NM1">
+                <EntityIDCode>IL</EntityIDCode>
+                <EntityTypeQualifier>1</EntityTypeQualifier>
+                <NameLastOrgName>TEST</NameLastOrgName>
+                <NameFirst>UAT</NameFirst>
+                <NameMiddle>null</NameMiddle>
+                <NameSuffix>Text</NameSuffix>
+                <IDCodeQualifier>MI</IDCodeQualifier>
+                <IDCode>77777962401</IDCode>
+            </SubscriberName>
+        </SubscriberNameLoop>
+    </SubscriberLevelLoop>
+    <ServiceProviderLevelLoop>
+        <ServiceProviderLevel SegId="HL">
+            <HierarchIDNumber>4</HierarchIDNumber>
+            <HierarchParentID>0001</HierarchParentID>
+            <HierarchLevelCode>19</HierarchLevelCode>
+            <HierarchChildCode>1</HierarchChildCode>
+        </ServiceProviderLevel>
+        <MessageText SegId="MSG">
+            <FreeFormMessageTxt></FreeFormMessageTxt>
+        </MessageText>
+        <ServiceProviderNameLoop>
+            <ServiceProviderName SegId="NM1">
+                <EntityIDCode>1T</EntityIDCode>
+                <EntityTypeQualifier>2</EntityTypeQualifier>
+                <NameLastOrgName>PRV</NameLastOrgName>
+                <NameFirst>NONPAR</NameFirst>
+                <NameMiddle>null</NameMiddle>
+            </ServiceProviderName>
+            <ServiceProviderSupplementalIdentification SegId="REF">
+                <ReferenceIdentQual>ZH</ReferenceIdentQual>
+                <ReferenceIdent>777</ReferenceIdent>
+            </ServiceProviderSupplementalIdentification>
+            <ServiceProviderInformation SegId="PRV">
+                <ProviderCode>CO</ProviderCode>
+                <ReferenceIdentQual>ZZ</ReferenceIdentQual>
+                <ReferenceIdent>null</ReferenceIdent>
+            </ServiceProviderInformation>
+        </ServiceProviderNameLoop>
+        <ServiceLevelLoop>
+            <ServiceLevel SegId="HL">
+                <HierarchIDNumber>6</HierarchIDNumber>
+                <HierarchParentID>4</HierarchParentID>
+                <HierarchLevelCode>SS</HierarchLevelCode>
+                <HierarchChildCode>0</HierarchChildCode>
+            </ServiceLevel>
+            <ServiceTraceNumber SegId="TRN">
+                <TraceTypeCode>1</TraceTypeCode>
+                <ReferenceIdent>122906</ReferenceIdent>
+                <OriginatingCompanyID>RoyalUM</OriginatingCompanyID>
+            </ServiceTraceNumber>
+            <HealthCareServicesReviewInformation SegId="UM">
+                <RequestCategoryCode>HS</RequestCategoryCode>
+                <CertificateTypeCode>5</CertificateTypeCode>
+            </HealthCareServicesReviewInformation>
+        </ServiceLevelLoop>
+    </ServiceProviderLevelLoop>
+    <ServiceProviderLevelLoop>
+        <ServiceProviderLevel SegId="HL">
+            <HierarchIDNumber>4</HierarchIDNumber>
+            <HierarchParentID>0002</HierarchParentID>
+            <HierarchLevelCode>19</HierarchLevelCode>
+            <HierarchChildCode>1</HierarchChildCode>
+        </ServiceProviderLevel>
+        <MessageText SegId="MSG">
+            <FreeFormMessageTxt></FreeFormMessageTxt>
+        </MessageText>
+        <ServiceProviderNameLoop>
+            <ServiceProviderName SegId="NM1">
+                <EntityIDCode>1T</EntityIDCode>
+                <EntityTypeQualifier>2</EntityTypeQualifier>
+                <NameLastOrgName>PRV</NameLastOrgName>
+                <NameFirst>NONPAR</NameFirst>
+                <NameMiddle>null</NameMiddle>
+            </ServiceProviderName>
+            <ServiceProviderSupplementalIdentification SegId="REF">
+                <ReferenceIdentQual>ZH</ReferenceIdentQual>
+                <ReferenceIdent>777</ReferenceIdent>
+            </ServiceProviderSupplementalIdentification>
+            <ServiceProviderInformation SegId="PRV">
+                <ProviderCode>CO</ProviderCode>
+                <ReferenceIdentQual>ZZ</ReferenceIdentQual>
+                <ReferenceIdent>null</ReferenceIdent>
+            </ServiceProviderInformation>
+        </ServiceProviderNameLoop>
+        <ServiceLevelLoop>
+            <ServiceLevel SegId="HL">
+                <HierarchIDNumber>6</HierarchIDNumber>
+                <HierarchParentID>4</HierarchParentID>
+                <HierarchLevelCode>SS</HierarchLevelCode>
+                <HierarchChildCode>0</HierarchChildCode>
+            </ServiceLevel>
+            <ServiceTraceNumber SegId="TRN">
+                <TraceTypeCode>1</TraceTypeCode>
+                <ReferenceIdent>122906</ReferenceIdent>
+                <OriginatingCompanyID>RoyalUM</OriginatingCompanyID>
+            </ServiceTraceNumber>
+            <HealthCareServicesReviewInformation SegId="UM">
+                <RequestCategoryCode>HS</RequestCategoryCode>
+                <CertificateTypeCode>5</CertificateTypeCode>
+                <ServiceTypeCode>54</ServiceTypeCode>
+                <HealthCareServLoc>70:B</HealthCareServLoc>
+                <LevelOfServCode>03</LevelOfServCode>
+            </HealthCareServicesReviewInformation>
+            <HealthCareServicesReview>
+                <ActionCode>A1</ActionCode>
+                <ReferenceIdent>002700</ReferenceIdent>
+                <RejectReasonCode>2</RejectReasonCode>
+                <YesNoCondRespCode>Y</YesNoCondRespCode>
+            </HealthCareServicesReview>
+            <ServiceDate SegId="DTP">
+                <DateTimeQualifier>472</DateTimeQualifier>
+                <DateTimeFormatQual>RD8</DateTimeFormatQual>
+                <DateTimePeriod>20030502-20030502</DateTimePeriod>
+            </ServiceDate>
+            <CertificationIssueDate SegId="DTP">
+                <DateTimeQualifier>102</DateTimeQualifier>
+                <DateTimeFormatQual>D8</DateTimeFormatQual>
+                <DateTimePeriod>20030429</DateTimePeriod>
+            </CertificationIssueDate>
+            <Procedures SegId="HI">
+                <HealthCareCodeInfo>BO:99212:RD8:20030502-20030502::1</HealthCareCodeInfo>
+            </Procedures>
+            <MessageText SegId="MSG">
+                <FreeFormMessageTxt>null</FreeFormMessageTxt>
+            </MessageText>
+        </ServiceLevelLoop>
+    </ServiceProviderLevelLoop>
+    <TransactionSetTrailer SegId="SE">
+        <NumberOfIncSegs>7</NumberOfIncSegs>
+        <TSControlNumber>5516</TSControlNumber>
+    </TransactionSetTrailer>
+    <FunctionalGroupTrailer SegId="GE">
+        <NumberOfInclTS>8</NumberOfInclTS>
+        <GroupCtrlNumber>5516</GroupCtrlNumber>
+    </FunctionalGroupTrailer>
+    <InterchangeControlTrailer SegId="IEA">
+        <NumberOfInclGS>9</NumberOfInclGS>
+        <InterCtrlNumber>-126801799</InterCtrlNumber>
+    </InterchangeControlTrailer>
+</TransactionResponse>
+<?xml version="1.0"?>
+<!DOCTYPE TransactionResponse SYSTEM "/home/royals/qdx5.1/bpms/apps/conf/T278/x12-278b-Royal.dtd">
+<TransactionResponse>
+    <InterchangeControlHeader SegId="ISA">
+        <AuthorInfoQualifier>Text</AuthorInfoQualifier>
+        <AuthorInformation>Text</AuthorInformation>
+        <SecurityInfoQual>Text</SecurityInfoQual>
+        <SecurityInformation>Text</SecurityInformation>
+        <InterchangeIDQual>Text</InterchangeIDQual>
+        <InterchangeSenderID>ROYTUM</InterchangeSenderID>
+        <InterchangeIDQual>Text</InterchangeIDQual>
+        <InterchangeReceiverID>MCTM</InterchangeReceiverID>
+        <InterchangeDate>04/29/03</InterchangeDate>
+        <InterchangeTime>07:03</InterchangeTime>
+        <InterCtrlStandIdent>Text</InterCtrlStandIdent>
+        <InterCtrlVersionNum>Text</InterCtrlVersionNum>
+        <InterCtrlNumber>-126801799</InterCtrlNumber>
+        <AckRequested>Text</AckRequested>
+        <UsageIndicator>Text</UsageIndicator>
+        <ComponentElemSeparator>:</ComponentElemSeparator>
+    </InterchangeControlHeader>
+    <FunctionalGroupHeader SegId="GS">
+        <FunctionalIDCode>121</FunctionalIDCode>
+        <ApplicationSenderCode>Royal UMCM</ApplicationSenderCode>
+        <ApplicationReceiverCode>NHP</ApplicationReceiverCode>
+        <Date>04/29/03</Date>
+        <Time>07:03</Time>
+        <GroupCtrlNumber>34522</GroupCtrlNumber>
+        <ResponsibleAgencyCode>Text</ResponsibleAgencyCode>
+        <VerReleaseIDCode>UM 1.0 release 55</VerReleaseIDCode>
+    </FunctionalGroupHeader>
+    <TransactionSetHeader SegId="ST">
+        <TSIDCode>278</TSIDCode>
+        <TSControlNumber>5516</TSControlNumber>
+    </TransactionSetHeader>
+    <BeginningOfHierarchicalTransaction SegId="BHT">
+        <HierarchStructCode>0078</HierarchStructCode>
+        <TSPurposeCode>13</TSPurposeCode>
+        <ReferenceIdent>022130001</ReferenceIdent>
+        <Date>20030429</Date>
+        <Time>070347</Time>
+        <TransactionTypeCode>18</TransactionTypeCode>
+    </BeginningOfHierarchicalTransaction>
+    <UMOLevelLoop>
+        <UMOLevel SegId="HL">
+            <HierarchIDNumber>1</HierarchIDNumber>
+            <HierarchLevelCode>20</HierarchLevelCode>
+            <HierarchChildCode>1</HierarchChildCode>
+        </UMOLevel>
+        <UMONameLoop>
+            <UMOName SegId="NM1">
+                <EntityIDCode>X3</EntityIDCode>
+                <EntityTypeQualifier>2</EntityTypeQualifier>
+                <NameLastOrgName>Text</NameLastOrgName>
+                <NameFirst>Text</NameFirst>
+                <NameMiddle>Text</NameMiddle>
+                <NameSuffix>Text</NameSuffix>
+                <IDCodeQualifier>XV</IDCodeQualifier>
+                <IDCode>123456 TBD</IDCode>
+            </UMOName>
+            <UMOContactInformation SegId="PER">
+                <ContactFunctCode>IC</ContactFunctCode>
+                <Name>26</Name>
+            </UMOContactInformation>
+        </UMONameLoop>
+    </UMOLevelLoop>
+    <RequesterLevelLoop>
+        <RequesterLevel SegId="HL">
+            <HierarchIDNumber>2</HierarchIDNumber>
+            <HierarchParentID>0001</HierarchParentID>
+            <HierarchLevelCode>21</HierarchLevelCode>
+            <HierarchChildCode>1</HierarchChildCode>
+        </RequesterLevel>
+        <RequesterNameLoop>
+            <RequesterName SegId="NM1">
+                <EntityIDCode>1P</EntityIDCode>
+                <EntityTypeQualifier>2</EntityTypeQualifier>
+                <NameLastOrgName>null</NameLastOrgName>
+                <IDCodeQualifier>24</IDCodeQualifier>
+                <IDCode>26674101</IDCode>
+            </RequesterName>
+            <RequesterSupplementalIdentification SegId="REF">
+                <ReferenceIdentQual>ZH</ReferenceIdentQual>
+                <ReferenceIdent>26674101</ReferenceIdent>
+            </RequesterSupplementalIdentification>
+            <RequesterProviderInformation SegId="PRV">
+                <ProviderCode>RF</ProviderCode>
+                <ReferenceIdentQual>ZZ</ReferenceIdentQual>
+                <ReferenceIdent>15001</ReferenceIdent>
+            </RequesterProviderInformation>
+        </RequesterNameLoop>
+    </RequesterLevelLoop>
+    <SubscriberLevelLoop>
+        <SubscriberLevel SegId="HL">
+            <HierarchIDNumber>3</HierarchIDNumber>
+            <HierarchParentID>0001</HierarchParentID>
+            <HierarchLevelCode>22</HierarchLevelCode>
+            <HierarchChildCode>1</HierarchChildCode>
+        </SubscriberLevel>
+        <SubscriberDiagnosis SegId="HI">
+            <HealthCareCodeInfo>BF:25010</HealthCareCodeInfo>
+        </SubscriberDiagnosis>
+        <SubscriberNameLoop>
+            <SubscriberName SegId="NM1">
+                <EntityIDCode>IL</EntityIDCode>
+                <EntityTypeQualifier>1</EntityTypeQualifier>
+                <NameLastOrgName>TEST</NameLastOrgName>
+                <NameFirst>UAT</NameFirst>
+                <NameMiddle>null</NameMiddle>
+                <NameSuffix>Text</NameSuffix>
+                <IDCodeQualifier>MI</IDCodeQualifier>
+                <IDCode>77777962401</IDCode>
+            </SubscriberName>
+        </SubscriberNameLoop>
+    </SubscriberLevelLoop>
+    <ServiceProviderLevelLoop>
+        <ServiceProviderLevel SegId="HL">
+            <HierarchIDNumber>4</HierarchIDNumber>
+            <HierarchParentID>0001</HierarchParentID>
+            <HierarchLevelCode>19</HierarchLevelCode>
+            <HierarchChildCode>1</HierarchChildCode>
+        </ServiceProviderLevel>
+        <MessageText SegId="MSG">
+            <FreeFormMessageTxt></FreeFormMessageTxt>
+        </MessageText>
+        <ServiceProviderNameLoop>
+            <ServiceProviderName SegId="NM1">
+                <EntityIDCode>1T</EntityIDCode>
+                <EntityTypeQualifier>2</EntityTypeQualifier>
+                <NameLastOrgName>PRV</NameLastOrgName>
+                <NameFirst>NONPAR</NameFirst>
+                <NameMiddle>null</NameMiddle>
+            </ServiceProviderName>
+            <ServiceProviderSupplementalIdentification SegId="REF">
+                <ReferenceIdentQual>ZH</ReferenceIdentQual>
+                <ReferenceIdent>777</ReferenceIdent>
+            </ServiceProviderSupplementalIdentification>
+            <ServiceProviderInformation SegId="PRV">
+                <ProviderCode>CO</ProviderCode>
+                <ReferenceIdentQual>ZZ</ReferenceIdentQual>
+                <ReferenceIdent>null</ReferenceIdent>
+            </ServiceProviderInformation>
+        </ServiceProviderNameLoop>
+        <ServiceLevelLoop>
+            <ServiceLevel SegId="HL">
+                <HierarchIDNumber>6</HierarchIDNumber>
+                <HierarchParentID>4</HierarchParentID>
+                <HierarchLevelCode>SS</HierarchLevelCode>
+                <HierarchChildCode>0</HierarchChildCode>
+            </ServiceLevel>
+            <ServiceTraceNumber SegId="TRN">
+                <TraceTypeCode>1</TraceTypeCode>
+                <ReferenceIdent>122906</ReferenceIdent>
+                <OriginatingCompanyID>RoyalUM</OriginatingCompanyID>
+            </ServiceTraceNumber>
+            <HealthCareServicesReviewInformation SegId="UM">
+                <RequestCategoryCode>HS</RequestCategoryCode>
+                <CertificateTypeCode>5</CertificateTypeCode>
+            </HealthCareServicesReviewInformation>
+        </ServiceLevelLoop>
+    </ServiceProviderLevelLoop>
+    <ServiceProviderLevelLoop>
+        <ServiceProviderLevel SegId="HL">
+            <HierarchIDNumber>4</HierarchIDNumber>
+            <HierarchParentID>0002</HierarchParentID>
+            <HierarchLevelCode>19</HierarchLevelCode>
+            <HierarchChildCode>1</HierarchChildCode>
+        </ServiceProviderLevel>
+        <MessageText SegId="MSG">
+            <FreeFormMessageTxt></FreeFormMessageTxt>
+        </MessageText>
+        <ServiceProviderNameLoop>
+            <ServiceProviderName SegId="NM1">
+                <EntityIDCode>1T</EntityIDCode>
+                <EntityTypeQualifier>2</EntityTypeQualifier>
+                <NameLastOrgName>PRV</NameLastOrgName>
+                <NameFirst>NONPAR</NameFirst>
+                <NameMiddle>null</NameMiddle>
+            </ServiceProviderName>
+            <ServiceProviderSupplementalIdentification SegId="REF">
+                <ReferenceIdentQual>ZH</ReferenceIdentQual>
+                <ReferenceIdent>777</ReferenceIdent>
+            </ServiceProviderSupplementalIdentification>
+            <ServiceProviderInformation SegId="PRV">
+                <ProviderCode>CO</ProviderCode>
+                <ReferenceIdentQual>ZZ</ReferenceIdentQual>
+                <ReferenceIdent>null</ReferenceIdent>
+            </ServiceProviderInformation>
+        </ServiceProviderNameLoop>
+        <ServiceLevelLoop>
+            <ServiceLevel SegId="HL">
+                <HierarchIDNumber>6</HierarchIDNumber>
+                <HierarchParentID>4</HierarchParentID>
+                <HierarchLevelCode>SS</HierarchLevelCode>
+                <HierarchChildCode>0</HierarchChildCode>
+            </ServiceLevel>
+            <ServiceTraceNumber SegId="TRN">
+                <TraceTypeCode>1</TraceTypeCode>
+                <ReferenceIdent>122906</ReferenceIdent>
+                <OriginatingCompanyID>RoyalUM</OriginatingCompanyID>
+            </ServiceTraceNumber>
+            <HealthCareServicesReviewInformation SegId="UM">
+                <RequestCategoryCode>HS</RequestCategoryCode>
+                <CertificateTypeCode>5</CertificateTypeCode>
+                <ServiceTypeCode>54</ServiceTypeCode>
+                <HealthCareServLoc>70:B</HealthCareServLoc>
+                <LevelOfServCode>03</LevelOfServCode>
+            </HealthCareServicesReviewInformation>
+            <HealthCareServicesReview>
+                <ActionCode>A1</ActionCode>
+                <ReferenceIdent>002700</ReferenceIdent>
+                <RejectReasonCode>2</RejectReasonCode>
+                <YesNoCondRespCode>Y</YesNoCondRespCode>
+            </HealthCareServicesReview>
+            <ServiceDate SegId="DTP">
+                <DateTimeQualifier>472</DateTimeQualifier>
+                <DateTimeFormatQual>RD8</DateTimeFormatQual>
+                <DateTimePeriod>20030502-20030502</DateTimePeriod>
+            </ServiceDate>
+            <CertificationIssueDate SegId="DTP">
+                <DateTimeQualifier>102</DateTimeQualifier>
+                <DateTimeFormatQual>D8</DateTimeFormatQual>
+                <DateTimePeriod>20030429</DateTimePeriod>
+            </CertificationIssueDate>
+            <Procedures SegId="HI">
+                <HealthCareCodeInfo>BO:99212:RD8:20030502-20030502::1</HealthCareCodeInfo>
+            </Procedures>
+            <MessageText SegId="MSG">
+                <FreeFormMessageTxt>null</FreeFormMessageTxt>
+            </MessageText>
+        </ServiceLevelLoop>
+    </ServiceProviderLevelLoop>
+    <TransactionSetTrailer SegId="SE">
+        <NumberOfIncSegs>7</NumberOfIncSegs>
+        <TSControlNumber>5516</TSControlNumber>
+    </TransactionSetTrailer>
+    <FunctionalGroupTrailer SegId="GE">
+        <NumberOfInclTS>8</NumberOfInclTS>
+        <GroupCtrlNumber>5516</GroupCtrlNumber>
+    </FunctionalGroupTrailer>
+    <InterchangeControlTrailer SegId="IEA">
+        <NumberOfInclGS>9</NumberOfInclGS>
+        <InterCtrlNumber>-126801799</InterCtrlNumber>
+    </InterchangeControlTrailer>
+</TransactionResponse>

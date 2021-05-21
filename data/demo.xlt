@@ -1,0 +1,27 @@
+prologue
+    xlt_infile:	hl7 2.1  ADT_A01
+    who:	trnadmin03
+    date:	July 13, 2015 5:39:48 PM CDT
+    xlt_outfile:	hl7 2.1  ADT_A01
+    type:	xlt
+    version:	7.0
+end_prologue
+
+{ { OP PATHCOPY } 
+    { ERR 0 }
+    { IN {} }
+    { OUT {} }
+}
+{ { OP COPY } 
+    { ERR 0 }
+    { PRE {
+        lassign  $xlateInVals  ssn
+        set  ssn  [ string  map  { -  “” }  $ssn ]
+        set  xlateOutVals  [ list  $ssn ]
+    }}
+    { POST {
+        #code fragment here
+    }}
+    { IN 0(0).PID(0).#19(0) }
+    { OUT 0(0).PID(0).#19(0) }
+}

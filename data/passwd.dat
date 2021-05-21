@@ -1,0 +1,19 @@
+root:Q8WNlAKTBHANQ:0:0:root,115,972-361-3000,972-555-1234:/root:/bin/bash
+bin:*:1:1:bin:/bin:
+daemon:*:2:2:daemon:/sbin:
+adm:*:3:4:adm:/var/adm:
+lp:*:4:7:lp:/var/spool/lpd:
+sync:*:5:0:sync:/sbin:/bin/sync
+shutdown:*:6:0:shutdown:/sbin:/sbin/shutdown
+halt:*:7:0:halt:/sbin:/sbin/halt
+mail:*:8:12:mail:/var/spool/mail:
+news:*:9:13:news:/var/spool/news:
+uucp:*:10:14:uucp:/var/spool/uucp:
+operator:*:11:0:operator:/root:
+games:*:12:100:games:/usr/games:
+gopher:*:13:30:gopher:/usr/lib/gopher-data:
+ftp:*:14:50:FTP User:/home/ftp:
+nobody:*:99:99:Nobody:/:
+hci:VaawmW8fQSA2A:1001:500:Cloverleaf production mode:/home/hci:/bin/bash
+hcitest:VaawmW8fQSA2A:1002:500:Cloverleaf test mode:/home/hcitest:/bin/bash
+hcispt1:R9K7dDNrKIofI:1003:500:HCI support--HCI support hotline +1.972.851.7038:/home/hcispt1:/bin/tcsh

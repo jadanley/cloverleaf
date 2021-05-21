@@ -1,0 +1,10 @@
+prologue
+    who:	mazanec
+    date:	Tue Jan 10 01:34:02 CST 1995
+    version:	3.0
+    type:	view
+end_prologue
+showallxactions 1
+filter 
+host {SYMNAME hciblaster} {COORDS {150 115}}
+host {SYMNAME hcicatcher} {COORDS {343 109}}

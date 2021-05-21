@@ -1,0 +1,260 @@
+# Record Layout: order.frl
+#
+prologue
+    who:	Infor
+    date:	February 13, 2017 3:23:44 PM EST
+    type:	frl
+    version:	3.0
+end_prologue
+ 
+#
+# Include Files
+#
+ 
+ 
+#
+# Mask declarations
+#
+ 
+ 
+#
+# Group declarations
+#
+ 
+ 
+#
+# Field declarations
+#
+ 
+{NAME TranCode} {TYPE fmt} { FMT {
+    { FILL {} }
+    { JUST l }
+    { OFFSET {} }
+    { SFDATA {
+        {
+            { DATATYPE ch }
+            { FILL {} }
+            { IN_VERIFY 0 }
+            { JUST l }
+            { OUT_VERIFY 0 }
+            { PREFIX {} }
+            { WIDTH 5 }
+        } 
+    } }
+    { WHEN_VERIFY f }
+    { WIDTH 5 }
+}}
+{NAME PatID} {TYPE fmt} { FMT {
+    { FILL {} }
+    { JUST l }
+    { OFFSET {} }
+    { SFDATA {
+        {
+            { DATATYPE ch }
+            { FILL {} }
+            { IN_VERIFY 0 }
+            { JUST l }
+            { OUT_VERIFY 0 }
+            { PREFIX {} }
+            { WIDTH 10 }
+        } 
+    } }
+    { WHEN_VERIFY f }
+    { WIDTH 10 }
+}}
+{NAME PatName} {TYPE fmt} { FMT {
+    { FILL {} }
+    { JUST l }
+    { OFFSET {} }
+    { SFDATA {
+        {
+            { DATATYPE ch }
+            { FILL {} }
+            { IN_VERIFY 0 }
+            { JUST l }
+            { OUT_VERIFY 0 }
+            { PREFIX {} }
+            { WIDTH 25 }
+        } {
+            { DATATYPE ch }
+            { FILL {} }
+            { IN_VERIFY 0 }
+            { JUST l }
+            { OUT_VERIFY 0 }
+            { PREFIX {} }
+            { WIDTH 25 }
+        } {
+            { DATATYPE ch }
+            { FILL {} }
+            { IN_VERIFY 0 }
+            { JUST l }
+            { OUT_VERIFY 0 }
+            { PREFIX {} }
+            { WIDTH 1 }
+        } 
+    } }
+    { WHEN_VERIFY f }
+    { WIDTH 51 }
+}}
+{NAME PatGender} {TYPE fmt} { FMT {
+    { FILL {} }
+    { JUST l }
+    { OFFSET {} }
+    { SFDATA {
+        {
+            { DATATYPE ch }
+            { FILL {} }
+            { IN_VERIFY 0 }
+            { JUST l }
+            { OUT_VERIFY 0 }
+            { PREFIX {} }
+            { WIDTH 1 }
+        } 
+    } }
+    { WHEN_VERIFY f }
+    { WIDTH 1 }
+}}
+{NAME OrderNum} {TYPE fmt} { FMT {
+    { FILL {} }
+    { JUST l }
+    { OFFSET {} }
+    { SFDATA {
+        {
+            { DATATYPE ch }
+            { FILL {} }
+            { IN_VERIFY 0 }
+            { JUST r }
+            { OUT_VERIFY 0 }
+            { PREFIX {} }
+            { WIDTH 8 }
+        } 
+    } }
+    { WHEN_VERIFY f }
+    { WIDTH 8 }
+}}
+{NAME ObsDate} {TYPE fmt} { FMT {
+    { FILL {} }
+    { JUST l }
+    { OFFSET {} }
+    { SFDATA {
+        {
+            { DATATYPE ch }
+            { FILL {} }
+            { IN_VERIFY 0 }
+            { JUST l }
+            { OUT_VERIFY 0 }
+            { PREFIX {} }
+            { WIDTH 8 }
+        } 
+    } }
+    { WHEN_VERIFY f }
+    { WIDTH 8 }
+}}
+{NAME ResultCode_0} {TYPE fmt} { FMT {
+    { FILL {} }
+    { JUST l }
+    { OFFSET {} }
+    { SFDATA {
+        {
+            { DATATYPE ch }
+            { FILL {} }
+            { IN_VERIFY 0 }
+            { JUST r }
+            { OUT_VERIFY 0 }
+            { PREFIX {} }
+            { WIDTH 5 }
+        } 
+    } }
+    { WHEN_VERIFY f }
+    { WIDTH 5 }
+}}
+{NAME ResultText_0} {TYPE fmt} { FMT {
+    { FILL {} }
+    { JUST l }
+    { OFFSET {} }
+    { SFDATA {
+        {
+            { DATATYPE ch }
+            { FILL {} }
+            { IN_VERIFY 0 }
+            { JUST l }
+            { OUT_VERIFY 0 }
+            { PREFIX {} }
+            { WIDTH 40 }
+        } 
+    } }
+    { WHEN_VERIFY f }
+    { WIDTH 40 }
+}}
+{NAME ResultCode_1} {TYPE fmt} { FMT {
+    { FILL {} }
+    { JUST l }
+    { OFFSET {} }
+    { SFDATA {
+        {
+            { DATATYPE ch }
+            { FILL {} }
+            { IN_VERIFY 0 }
+            { JUST r }
+            { OUT_VERIFY 0 }
+            { PREFIX {} }
+            { WIDTH 5 }
+        } 
+    } }
+    { WHEN_VERIFY f }
+    { WIDTH 5 }
+}}
+{NAME ResultText_1} {TYPE fmt} { FMT {
+    { FILL {} }
+    { JUST l }
+    { OFFSET {} }
+    { SFDATA {
+        {
+            { DATATYPE ch }
+            { FILL {} }
+            { IN_VERIFY 0 }
+            { JUST l }
+            { OUT_VERIFY 0 }
+            { PREFIX {} }
+            { WIDTH 40 }
+        } 
+    } }
+    { WHEN_VERIFY f }
+    { WIDTH 40 }
+}}
+{NAME ResultCode_2} {TYPE fmt} { FMT {
+    { FILL {} }
+    { JUST l }
+    { OFFSET {} }
+    { SFDATA {
+        {
+            { DATATYPE ch }
+            { FILL {} }
+            { IN_VERIFY 0 }
+            { JUST r }
+            { OUT_VERIFY 0 }
+            { PREFIX {} }
+            { WIDTH 5 }
+        } 
+    } }
+    { WHEN_VERIFY f }
+    { WIDTH 5 }
+}}
+{NAME ResultText_2} {TYPE fmt} { FMT {
+    { FILL {} }
+    { JUST l }
+    { OFFSET {} }
+    { SFDATA {
+        {
+            { DATATYPE ch }
+            { FILL {} }
+            { IN_VERIFY 0 }
+            { JUST l }
+            { OUT_VERIFY 0 }
+            { PREFIX {} }
+            { WIDTH 40 }
+        } 
+    } }
+    { WHEN_VERIFY f }
+    { WIDTH 40 }
+}}
